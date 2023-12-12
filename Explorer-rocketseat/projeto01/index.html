@@ -1,0 +1,56 @@
+<!-- Define que o documento é um html de versão 5 -->
+<!DOCTYPE html>
+<!--A tag é a tag raiz é a primeira tag do documento com um atributo que define a linguagem do documento-->
+<html lang="pt-br">
+    <!-- Contém instruções para a própria página-->
+    <head>
+        <!--faz uma pré conexão com o goggle fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Tudo que for meta quer dizer que é para a própria página-->
+        <!-- Essa linha faz enteder os carácteres do tipo utf8, práticamente sempre estará no documento-->
+        <meta charset="UTF-8">
+        <!--O conteúdo da viewport será ajustado conforme a largurá do dispositivo-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título da página, onde fica escrito na aba do navegador-->
+        <title>Móveis custumizados</title>
+        
+        <!--Importa a fonte do google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!--Chama o arquivo css-->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <!-- Define o corpo da página, onde será a parte visual-->
+    <body>
+        <!--A div funciona como uma caixa que serão colocado elementos dentro, ela possui um identificador chamado hero-->
+        <div id="hero">
+            <img src="./img/image1.jpg" alt="Desenho de uma pessoa com camisa amarela em uma sala com móveis.">
+            <!--Criou um título, os titulos podem utilizar tags de h1 a h6-->
+            <h1>Ambientes <span>únicos</span> para você</h1>
+            <!--Essa linha cria um parágrafo-->
+            <p>
+                Nós criamos ambientes <strong>exclusívos</strong> e <strong>únicos</strong>, com muito bom gosto e profissionalismo, investimos tempo e <span>dedicação no seu projeto.</span>
+            <!-- </p> -->
+            <!--Essa linha cria outro parágrafo-->
+            <!-- <p> -->
+                <br/>
+                <br/>
+                Tenha <span>ambientes limpos</span> e bem decorados, transmitindo <span>elegância e finesse</span> para todo aquele que estiver ali.
+            </p>
+        </div>
+        <!--Cria uma outra caixa que pode ser colocado elementos dentro com o nome de footer-->
+        <div id="footer">
+            <div id="line"></div>
+            <!--As duas próximas linhas criam links, uma vai para o instagram e a outra vai para um clinete de e-mail-->
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="mailto:contato@contato.com.br">Fale Conosco</a>
+        </div>
+
+        <!-- Linha que coloca uma imagem na página-->
+        <img id="balls" src="./img/balls.svg" alt="Bolinhas alaranjadas no canto inferior direito da tela">
+
+
+
+    </body>
+</html>

@@ -1,0 +1,83 @@
+
+/*coloca estilização no elemento body*/
+body{
+    /* coloca o estilo da fonte como Open Sans, caso não tenha no navegado entra o sans-serif */
+    font-family: 'Open Sans', sans-serif;
+    /* Centraliza o texto */
+    text-align: center;
+    /* Zera as margens do body */
+    margin: 0
+
+}
+
+/* Define as configurações para a div que tem o id hero */
+#hero{
+    /* Define a largura */
+    width: 592px;
+    /* Centraliza a div hero para o centro da tela */
+    /* Coloca margem de 0 em cima auto nas laterais e 72px na parte de baixo */
+    margin: 0 auto 72px;
+}
+
+
+/* Define as configurações para a imagem que está dentro da div que tem o id hero */
+#hero img {
+    /* A imagem fica com uma margim de baixo de 72px */
+    margin-bottom: 72px;
+}
+
+/*Coloca estilo no elemento h1*/
+h1{
+    /*coloca o estilo da fonte como inter, caso não tenha coloca o sans-serif*/
+    font-family: 'Inter', sans-serif;
+    /* coloca o tamanho da fonte de 49px */
+    font-size: 49px;
+    /* O tamanho da altura da linha com 56px */
+    line-height: 56px; /* 114.286% */
+    /* Peso da fonte como normal  */
+    font-weight: normal ;
+    margin-bottom: 32px ;
+}
+
+h1 span{
+    /* Peso da fonte com bold */
+    font-weight: bold;
+}
+
+
+
+/* Coloca estilo no elemento span */
+span , a{
+    /* coloca a cor do texto como laranja */
+    color: #FF9900;
+}
+
+/* Coloca estilo para o elemento p */
+p, #footer{
+    /* coloca a cor do texto como cinza */
+    color: #7D7987;
+    /* Define o tamanho do texto para 14px */
+    font-size: 14px;
+    line-height: 28px;
+
+}
+
+/* Pega o seletor que anterior a ele tenha um a */
+/* Pegue o elemento a que anterior a ele tem um outro seletor a e coloque uma margem esquerda de 28px */
+#footer a + a {
+    margin-left: 28px; ;
+}
+
+#line {
+    width: 568px;
+    height: 0px;
+    border: 1px solid #ECEFF2;
+    margin: 0 auto 8px;
+
+}
+
+#balls {
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+}
