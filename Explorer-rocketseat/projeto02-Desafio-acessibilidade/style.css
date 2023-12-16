@@ -93,8 +93,11 @@ button {
   gap: 10px;
 
   border-radius: 4px;
-
   cursor: pointer;
+}
+
+button:hover {  
+    background: #4b8b76;
 }
 
 footer {
