@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu evento</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page">
+
+        <header>
+            <h1>Crie e compartilhe seu evento.</h1>
+            <p>O pirmeiro passo, é preencher esse formulário de inscrição.</p>
+        </header>
+        <form id="my-form">
+            <!-- Conjunto de campos -->
+            <fieldset>
+                <div class="fieldset-warapper">
+
+                    <!-- Legenda do agrupamento -->
+                    <legend>Informações do Evento</legend>
+
+                    <div class="input-warapper">
+                        <!-- Label é do tipo inline -->
+                        <label for="event-title">Titulo do evento <span>(minimo 8 caracteres)</span></label>
+                        <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                        <input type="text" id="event-title" required minlength="8" />
+                    </div>
+
+                    <div class="input-warapper">
+                        <!-- Label é do tipo inline -->
+                        <label for="event-link">Link do Evento <span>(comece com https://)</span></label>
+                        <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                        <input type="url" id="event-link">
+                    </div>
+
+                    <div class="input-warapper">
+                        <!-- Label é do tipo inline -->
+                        <label for="event-whatsapp">Whatsapp para contato <span>(somente números)<span></label>
+                        <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                        <input type="number" id="event-whatsapp" />
+                    </div>
+
+                    <div class="input-warapper">
+                        <!-- Label é do tipo inline -->
+                        <label for="event-info">Informações  extras </label>
+                        <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                        <textarea id="event-info"></textarea>
+                    </div>
+                </div>
+
+                <div class="input-warapper">
+                    <!-- Label é do tipo inline -->
+                    <label for="event-category">Categoria</label>
+                    <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                    <select id="event-category">
+                        <option value="live">Ao vivo</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="mentorshp">Mentoria</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+             <!-- Conjunto de campos -->
+             <fieldset>
+                <div class="fieldset-warapper">
+
+                    <!-- Legenda do agrupamento -->
+                    <legend>Privacidade</legend>
+
+                    <div class="input-warapper">
+                        <!-- Label é do tipo inline -->
+                        <label for="event-email">E-mail do administrador <span>(digite um email válido)</span></label>
+                        <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                        <input type="email" id="event-email">
+                    </div>
+
+                    <div class="input-warapper">
+                        <!-- Label é do tipo inline -->
+                        <label for="event-password">Senha de acesso para os participantes <span>(minimo 8 caracteres)</span></label>
+                        <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                        <input type="password" id="event-password" minlength="8">
+                    </div>
+
+                    <div class="checkbox-warapper">
+                        <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                        <input type="checkbox" id="event-private">
+                        <!-- Label é do tipo inline -->
+                        <label for="event-private"> Evento Privado</label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+             <!-- Conjunto de campos -->
+             <fieldset>
+                <div class="fieldset-warapper">
+
+                    <!-- Legenda do agrupamento -->
+                    <legend>Dia e Hora</legend>
+
+                    <div class="col-3">
+
+                        <div class="input-warapper">
+                            <!-- Label é do tipo inline -->
+                            <label for="event-date">Data</span></label>
+                            <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                            <input type="date" id="event-date">
+                        </div>
+    
+                        <div class="input-warapper">
+                            <!-- Label é do tipo inline -->
+                            <label for="event-begin">Das</span></label>
+                            <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                            <input type="time" id="event-begin">
+                        </div>
+
+                        <div class="input-warapper">
+                            <!-- Label é do tipo inline -->
+                            <label for="event-end">Até</span></label>
+                            <!-- Input é do tipo inline-block, destrava algumas propriedades do block -->
+                            <input type="time" id="event-end">
+                        </div>
+
+                    </div>
+
+                
+
+                </div>
+            </fieldset>
+            
+            
+        </form>
+        
+        
+        <!-- <footer >
+         Quando for preciso deixar o botão de submit fora do formulário precisamos colocar um id no formulário correspondente e no botão temos que colocar a propriedade form e essa propriedade deve ter o mesmo nome que o id do form 
+            <input class="button" type="submit" form="my-form" value="Salvar evento">
+        
+        </footer> -->
+    </div>
+
+  
+    
+</body>
+</html>

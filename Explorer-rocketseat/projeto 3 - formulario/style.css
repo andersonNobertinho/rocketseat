@@ -1,0 +1,296 @@
+/* Essa estilização para esse seletor faz com que todos os elementos fiquem com as propriedades zeradas - são resetados os valores do navegador. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, slect, textarea {
+    /* coloca um tipo de fonte */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Estilização do corpo da página que é body */
+
+body {
+    /* Tipo da fonte */
+    background: #E5E5E5;
+}
+
+/* Estamanos estilizando o elemento que criamos html antes do CSS, através do before */
+body::before {
+    /* Determina que é um elemento do tipo block
+    display: block; */
+   
+    /*  */
+    content: '';
+    /* Coloca uma largura de 100% no elemento */
+    width: 100%;
+    /* Coloca uma altura de 368px no elemento */
+    height: 368px;
+     /* Determina uma posição absoluta para elemento, desbloqueando caracterisicas com left, right, top e bottom e o z-index */
+     position: absolute;
+     /* Determina que o elemento será encostado na parte de cima do navegador */
+     top: 0;
+     /* Determina que o elemento será encostado na parte de esquerda do navegador */
+     left: 0;
+     z-index: -1;
+    /* Coloca uma cor de fundo */
+    background: #121214;
+}
+
+/* Estilizando a div com a classe page */
+.page {
+
+    /* Colocando uma largura de 736px */
+    width: 736px;
+    /* Deixando a margem centralizada */
+    margin: auto;
+
+}
+
+
+/* Estilizando o elemento header */
+header{
+    
+    /* Colocando uma largura de 736px */
+    width: 319px;
+    /* Colocando uma margem superior de 74px */
+    margin-top: 74px;
+}
+
+
+/* Estilizando o elemento h1 dentro do header */
+header h1{
+    /* Tipo da fonte */
+    font-family: 'Archivo', sans-serif;
+    /* Espessura da fonte*/
+    font-weight: bold;
+    /* Tamnho da fonte */
+    font-size: 36px;
+    /* Espaçamento entre as linhas */
+    line-height: 42px;
+    /* Cor da fonte */
+    color: white;
+
+    margin-bottom: 24px;
+
+}
+
+/* Estilizando o elemento p dentro do header */
+header p{
+    /* Colocando o tipo da fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Colocando um tamanho de fonte */
+    font-size: 16px;
+    /* Espaçamento entre linhas */
+    line-height: 26px;
+    /* Colocando uma cor  */
+    color: #42D3FF;
+}
+
+form {
+    /* Colocando uma margem superior de 38px */
+    margin-top: 38px;
+    /* Colocando uma cor */
+    background: #FAFAFC ;
+    /* Arrendondando as bordas */
+    border-radius: 8px 8px 0 0;
+    /* Colocando uma altura minima  */
+    min-height: 300px;
+    /* Espaçamento interno do form */
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Agrupamento dos itens do formulário */
+fieldset {
+
+    /* Retira a borda que vem como padrão */
+    border: none;
+}
+
+
+.fieldset-warapper {
+
+        /* Habilita as propriedades do bloco flex */
+        display: flex;
+        /* Quando o flex é habilitado os elementos ficam um do lado do outro, esse comando faz com que ele fique um em baixo do outro! */
+        flex-direction: column;
+        /* Coloca um espaçamento entre os elementos */
+        gap: 24px;
+
+}
+
+/* Legenda do fieldset */
+fieldset legend {
+    /* Tipo da fonte */
+    font-family: 'Archivo', sans-serif;
+    /* Espeçura da fonte */
+    font-weight: 600;
+    /* Tamanho da fonte */
+    font-size: 24px;
+    /* Espaçamento entre linhas */
+    line-height: 34px;
+    /* Largura da borda que separa o  */
+    width: 100%;
+    /* Coloca a borda separadora do titulo e do conteúdo */
+    border-bottom: 1px solid #E6E6F0;
+    /* Coloca um espaço entre o titulo e a borda */
+    padding: 16PX;
+}
+
+/* Estilização da classe input-warapper que contém o label e o input */
+.input-warapper {
+    /* Transforma o conteúdos em flex */
+    display: flex;
+    /* Por padrão o flex deixa os elementos todos na mesma linha, com essa propriedade ele fica um em baixo do outro */
+    flex-direction: column;
+}
+/* Estilizando o label dentro da classe input-warapper  */
+.input-warapper label, .checkbox-warapper label {
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Espaçamento entre linhas */
+    line-height: 24px;
+    /* Cor do texto da label */
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+/* Estilizar o elemento  span que está na classe input-warapper que possui uma label e dentro da label tem um span */
+.input-warapper label span {
+    /* Coloca uma margem esquerda de 12px */
+    margin-left: 12px;
+    /* Coloca um tamanho na fonte */
+    font-size: 12px;
+    /* Espaçamento entre linha */
+    line-height: 20px;
+    /* Coloca uma cor */
+    color: #a9a7af;
+}
+
+/* Estiliza a label span quando passar o mouse em cima */
+.input-warapper label span:hover {  
+    /* Coloca uma cor quando o mouse passar em cima */
+    color: #6c6a71;
+}
+
+.input-warapper input, .input-warapper textarea, .input-warapper select {
+    /* Fundo do input */
+    background: #FAFAFC;
+    /* Cria a borda do input */
+    border: 1PX solid #E6E6F0;
+    /* Arredonda a borda */
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6c6a71;
+
+    /* Funciona para o cálculo do tamanho da caixa. Sem o border-box ele irá somar o valor do width e  */
+    /* box-sizing: border-box;
+    padding: 100px; */
+}
+
+.input-warapper textarea {
+    /* Coloca um paddin no texte area */
+    padding: 10px;
+    /* coloca uma altura para o text area */
+    height: 168px;
+}
+
+.input-warapper select {
+    appearance: none;
+    /* Em outros navegadores é necessário utilizar prefixos */
+    -webkit-appearance: none;
+    /* Esse comando está formatado como base 64 que é uma forma de colocar imagens em formato de texto  */
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    /* Tira a repetição da imagem */
+    background-repeat: no-repeat;
+    /* posiciona a seta do lado direito no meio do input e a 24px da borda lateral */
+    background-position: right 24px top 50%;
+}
+
+.col-3 {
+    display: flex;
+    gap: 20px;
+}
+/* A seta quer dizer para pegar a div apenas do primeiro nivle */
+.col-3 > div:nth-child(1) {
+    width: 100%;
+}
+
+/* Estiliza  */
+.checkbox-warapper {
+    position: relative;
+}
+
+/* Estiliza o label que está ao lado do checkbox */
+.checkbox-warapper label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 16px;
+}
+
+/* Estiliza o input do checkbox */
+.checkbox-warapper input {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    
+}
+
+.checkbox-warapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E6E6F0;
+    display: block;
+    border-radius: 8px;
+}
+
+.checkbox-warapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_3015_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3015_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-warapper input:focus + label::before {
+    outline: 2px solid black;
+}
+
+footer {
+    background: #F0F0F4;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-top: 1px solid #d6d6d6;
+    border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+    height: 56px;
+    background: #04d361;
+    border-radius: 5px;
+    border: 0;
+    color: #FFFFFF;
+}
+
+footer .button:hover {
+    background: #08a04c;
+}
+
+/* Validações */
+input:invalid {
+    border: 1px solid #FF1010;
+}
+
+
