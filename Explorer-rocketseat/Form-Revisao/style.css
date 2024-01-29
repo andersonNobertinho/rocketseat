@@ -1,0 +1,77 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:  #E5E5E5;
+}
+/* 
+- Forma para colocar o preto que parece o header no body
+- Para colocar essa segunda cor no body podemos utilizar uma pseudo class chamada ::after (após) ou ::before (antes)
+- Ao analisar o código através do DevTols observamos que ele colocou o ::before (Antes do conteúdo) que significa que está sendo criado um elemento html nessa determinada posição.
+- Somente com as 4 primeiras propriedades ele ainda não aparece, pois devemos passar todas as propriedades básicas de um elemento, então tenho que adicionar a 5ª propriedade.
+
+
+*/
+body::before {
+    /* Ao utilizar essa pseudoclass obrigatoriamente temos que colocar o conteúdo */
+    content: '';
+    /* Essa é a largura do elemento que será criado */
+    width: 100%;
+    /* Altura do elemento */
+    height: 368px;
+    /* Cor de fundo */
+    background: #121214;
+    /* Comportamento que o elemeto irá ter */
+    /* display: block; */
+    /* Essa propriedade irá fazer com que ele apareça por cima do conteúdo */
+    position: absolute;
+    /* Faz com que ele encoste na parte superior do navegador */
+    top: 0;
+    /* Faz com que ele encoste na parte esquerda do navegador */
+    left: 0;
+    /* Ao colocar o position absolute faz com que o elemento fique em cima, para que ele fique atrás dos elementos precisamos colocar essa propriedade com -1, pois por padrão o z index dos outros elementos são 0  */
+    z-index: -1;
+}
+
+/*  */
+.page {
+    /* Determina uma largura para a classe page  */
+    width: 736px;
+    /* Centraliza o header no meio da página */
+    margin: 0 auto;
+}
+
+header {
+    width: 319px;
+    margin-top: 74px;
+}
+
+header h1{
+    /* Coloca um tipo de fonte */
+    font-family: 'Archivo', sans-serif;
+    /* Especifica a grossura da fonte */
+    font-weight: bold;
+    /*  */
+    font-size: 36px;
+    line-height: 42px;
+    color: white
+}
+
+header p {
+    /* Coloca o tipo da fonte para o p que esta dentro do header */
+    font-family: 'Poppins';
+    /* Determina o tamanho da fonte */
+    font-size: 16px;
+    /* Espaçamento entre linhas */
+    line-height: 26px;
+    /* Coloca uma cor na fonte */
+    color: #42D3FF;
+}
+
+form {
+    margin-top: 38px;
+    background:#FAFAFC;
+    border-radius: 8px;
+    min-height: 300px;
+/* Agrupando campos com f.... tempo de 4:42 - 8 video */
+}
