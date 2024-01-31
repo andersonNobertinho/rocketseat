@@ -1,7 +1,19 @@
+* {
+    /* Calcúlo do tamanho da caixa sem o border box ele conta o a largura da caixa + o padding adicionado. Padrão é content-box */
+    /*  */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body, input, button, select, textarea {
+    font-family: 'Poppins';
+}
 
 body {
+    /* Tipo da fonte */
     font-family: 'Poppins', sans-serif;
+    /* Cor do fundo */
     background:  #E5E5E5;
 }
 /* 
@@ -42,7 +54,9 @@ body::before {
 }
 
 header {
+    /* coloca uma largura no elemento */
     width: 319px;
+    /* coloca uma margem superior */
     margin-top: 74px;
 }
 
@@ -54,7 +68,9 @@ header h1{
     /*  */
     font-size: 36px;
     line-height: 42px;
-    color: white
+    color: white;
+    /* Coloca uma margem inferior  */
+    margin-bottom: 24px;
 }
 
 header p {
@@ -69,9 +85,80 @@ header p {
 }
 
 form {
+    /* coloca uma margem superior no elemento */
     margin-top: 38px;
+    /* Cor de fundo */
     background:#FAFAFC;
+    /* deixa a borda arredondada dos 4 lados */
     border-radius: 8px;
+    /* coloca uma altura minima */
     min-height: 300px;
 /* Agrupando campos com f.... tempo de 4:42 - 8 video */
+/* Preenchimento interno no form */
+    padding: 64px;
+}
+
+fieldset {
+    /* Tira as bordas do fieldset */
+    border:none
+}
+
+fieldset legend {
+    /* Tipo de fonte */
+    font-family: 'Archivo';
+    /* Se ele é negrito, a fonte fica com uma espessura maior ou menor dependendo do valor colocado  */
+    font-weight: 600;
+    /* Tamanho da fonte */
+    font-size: 24px;
+    /* Epaçamento de linhas */
+    line-height: 34px;
+    /* Largura de 100% para que a linha da borda pegue todo o fieldset */
+    width: 100%;
+    /* A linha que fica em baixo da legenda */
+    border-bottom: 1px solid #E6E6F0 ;
+    /* Preenchimento interno para que a borda fique mais afastada  */
+    padding-bottom: 16px;
+}
+
+.input-warapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-warapper label {
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Espaçamento entre linhas */
+    line-height: 24px;
+    /* Cor da fonte */
+    color: #4E4958;
+    /* Colocou um espaçamento entre o input */
+    margin-bottom: 8px;
+}
+
+.input-warapper label span {
+    /* Coloca uma margem esquerda entre o texto e o span */
+    margin-left: 12px;
+    /* Tamanho da fonte */
+    font-size: 12px;
+    /* Espaçamento entre linhas */
+    line-height: 20px;
+    /* Cor do texto */
+    color: #C1BCCC;
+}
+
+.input-warapper input {
+    /* Borda do input */
+    border: 1px solid #E6E6F0;
+    /* Arredonda a borda do input */
+    border-radius: 8px;
+    /* o height e o padding funciona para criar o tamanho do input */
+    height: 56px;
+    padding: 0 24px;
+    /* Tipo de fonte */
+    font-family: 'Poppins';
+    /* Tamanho da fonte */
+    font-size: 16px;
+
+    line-height: 26px;
 }
