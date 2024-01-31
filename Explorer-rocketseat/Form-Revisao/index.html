@@ -19,18 +19,29 @@
         </header>
         <!-- Dentro do fom estarão os inputs -->
         <form action="">
+            <!-- Quando aplicamos o display flex no fieldset e o legend estando em seguida no html ele não considera que o legend faz parte da ideia do flex como filhos. 
+            A solução é fazer uma div com uma classe logo depois do fieldset colocando todos os elementos dentro   -->
             <!-- Agrupamento de campos -->
             <fieldset>
-                <!-- Legenda para esse conjunto de campos -->
-                <legend>Informações do Evento</legend>
-                <!-- Encapsulando alguns elementos -->
-                <div class="input-warapper">
+                <div class="fieldset-warapper">
+                    <!-- Legenda para esse conjunto de campos -->
+                    <legend>Informações do Evento</legend>
+                    <!-- Encapsulando alguns elementos -->
+                    <div class="input-warapper">
                     <!-- Rótulo do input -->
-                    <label for="event-title">Título do evento <span>(mínimo de 8 caracteres)</span></label>
-                    <!-- Cria o campo de entrada -->
-                    <input type="text" id="event-title">
+                        <label for="event-title">Título do evento <span>(mínimo de 8 caracteres)</span></label>
+                        <!-- Cria o campo de entrada -->
+                        <input type="text" id="event-title">
+                    </div>
 
+                    <div class="input-warapper">
+                        <!-- Rótulo do input -->
+                        <label for="event-link">Link do evento <span>(comece com https://)</span></label>
+                        <!-- Cria o campo de entrada -->
+                        <input type="text" id="event-link">
+                    </div>
                 </div>
+                
             </fieldset>
 
             

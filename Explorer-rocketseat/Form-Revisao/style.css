@@ -100,7 +100,18 @@ form {
 
 fieldset {
     /* Tira as bordas do fieldset */
-    border:none
+    border:none;
+   
+
+}
+
+
+.fieldset-warapper{
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
 }
 
 fieldset legend {
@@ -162,4 +173,4 @@ fieldset legend {
     /* Espaçamento entre linhas  */
     line-height: 26px;
 }
-/* Formatando o campo de 00:13:17 */
+/* Ajustando novos campos de 00:11:26 = -7:52 */
