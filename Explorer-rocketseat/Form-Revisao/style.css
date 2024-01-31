@@ -159,6 +159,7 @@ fieldset legend {
     font-family: 'Poppins';
     /* Tamanho da fonte */
     font-size: 16px;
-
+    /* Espaçamento entre linhas  */
     line-height: 26px;
 }
+/* Formatando o campo de 00:13:17 */
