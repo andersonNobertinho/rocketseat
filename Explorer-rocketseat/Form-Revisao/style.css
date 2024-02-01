@@ -105,13 +105,14 @@ fieldset {
 
 }
 
-
+/* Existe um bug que o legend não aceita as caracteristicas do display flex Colocando essa classe logo após o fieldset, então essa classe é criada logo após o fieldset e colocado os elementos dentro dessa classe para corrigir o bug   */
 .fieldset-warapper{
-
+    /* Ativa o flex box */
     display: flex;
+    /* Quando é ativada o flex box os elementos ficam um do lado do outro, com esse comando os elemento voltam a ficar um em baixo do outro. */
     flex-direction: column;
+    /* Coloca um espaçamento entre os elementos */
     gap: 24px;
-
 }
 
 fieldset legend {
@@ -132,7 +133,9 @@ fieldset legend {
 }
 
 .input-warapper {
+    /* Ativa as propriedades do flexbox */
     display: flex;
+    /* Quando é ativada o flex box os elementos ficam um do lado do outro, com esse comando os elemento voltam a ficar um em baixo do outro. */
     flex-direction: column;
 }
 
@@ -157,8 +160,14 @@ fieldset legend {
     /* Cor do texto */
     color: #C1BCCC;
 }
+/* Ao passar o mouse com a ferramenta DevTols em cima do elemento span que o contraste não está acessivel para todos, então como solução foi necessário colocar uma cor mais escura ao passar o mouse. */
+.input-warapper label span:hover {
+    /* Coloca uma cor no texto do span ao passar o mouse em cima */
+    color:#a9a7af;
+}
 
-.input-warapper input {
+.input-warapper input, .input-warapper textarea, .input-warapper select {
+    background: #FAFAFC;
     /* Borda do input */
     border: 1px solid #E6E6F0;
     /* Arredonda a borda do input */
@@ -173,4 +182,27 @@ fieldset legend {
     /* Espaçamento entre linhas  */
     line-height: 26px;
 }
-/* Ajustando novos campos de 00:11:26 = -7:52 */
+
+.input-warapper textarea {
+    /* Deixa o espaçamento interno com 0 */
+    padding: 0;
+    /* Coloca uma altura no elemento */
+    height: 168px;
+}
+
+
+.input-warapper select {
+    /* retira a seta que aparece no select */
+    appearance: none;
+    /* em alguns navegadores é necessário utilizar os vendor prefixes para garantir que os navegadores utilizem aquela propriedade que ainda está sendo implementada*/
+    -webkit-appearance: none;
+    /* Coloca a imagem da seta repetindo várias vezes */
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    /* Deixa uma setinha só e tira todas as outras que estão repetindo */
+    background-repeat: no-repeat;
+    /* Muda a posição da seta colocando ela no lado direito */
+    background-position: right 24px top 50%;
+
+}
+
+/* Aplicando estilos aos agora: Aplicando estilos aos agr */

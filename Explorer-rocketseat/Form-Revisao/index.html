@@ -38,8 +38,37 @@
                         <!-- Rótulo do input -->
                         <label for="event-link">Link do evento <span>(comece com https://)</span></label>
                         <!-- Cria o campo de entrada -->
-                        <input type="text" id="event-link">
+                        <input type="url" id="event-link">
                     </div>
+
+                    
+                    <div class="input-warapper">
+                        <!-- Rótulo do input -->
+                        <label for="event-whatsapp">Whatsapp para contato <span>(somente números)</span></label>
+                        <!-- Cria o campo de entrada -->
+                        <input type="number" id="event-whatsapp">
+                    </div>
+
+                    
+                    <div class="input-warapper">
+                        <!-- Rótulo do input -->
+                        <label for="event-info">Informações extras</label>
+                        <!-- Cria o campo de entrada -->
+                        <textarea name="" id="event-info" cols="30" rows="10"></textarea>
+                    </div>
+
+                    
+                    <div class="input-warapper">
+                        <!-- Rótulo do input -->
+                        <label for="event-category">Categoria</label>
+                        <!-- Cria o campo de entrada -->
+                       <select name="" id="event-category">
+                        <option value="live">Ao vivo</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="mentorship">Mentoria</option>
+                       </select>
+                    </div>
+
                 </div>
                 
             </fieldset>
