@@ -96,13 +96,15 @@ form {
 /* Agrupando campos com f.... tempo de 4:42 - 8 video */
 /* Preenchimento interno no form */
     padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 fieldset {
     /* Tira as bordas do fieldset */
     border:none;
-   
-
 }
 
 /* Existe um bug que o legend não aceita as caracteristicas do display flex Colocando essa classe logo após o fieldset, então essa classe é criada logo após o fieldset e colocado os elementos dentro dessa classe para corrigir o bug   */
@@ -202,7 +204,15 @@ fieldset legend {
     background-repeat: no-repeat;
     /* Muda a posição da seta colocando ela no lado direito */
     background-position: right 24px top 50%;
+}
 
+.col-3 {
+    display: flex;
+    gap: 20px;
+}
+/* A seta > significa primeiro nível de div, o (nth-child) preciso falar qual número do filho eu quero*/
+.col-3 > div:nth-child(1) {
+    width: 100%;
 }
 
 /* Aplicando estilos aos agora: Aplicando estilos aos agr */

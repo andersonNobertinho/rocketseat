@@ -73,8 +73,61 @@
                 
             </fieldset>
 
-            
+            <fieldset>
+                <div class="fieldset-warapper">
+                    <!-- Legenda para esse conjunto de campos -->
+                    <legend>Privacidade</legend>
 
+                    <div class="input-warapper">
+                        <!-- Rótulo do input -->
+                            <label for="event-email">Email do administrador <span>(digite um email válido)</span></label>
+                            <!-- Cria o campo de entrada -->
+                            <input type="email" id="event-email">
+                    </div>
+
+                    
+                    <div class="input-warapper">
+                        <!-- Rótulo do input -->
+                        <label for="event-password">Título do evento <span>(mínimo de 8 caracteres)</span></label>
+                            <!-- Cria o campo de entrada -->
+                            <input type="password" id="event-password">
+                    </div>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <div class="fieldset-warapper">
+                    <!-- Legenda para esse conjunto de campos -->
+                    <legend>Dia e Hora</legend>
+
+                    <div class="col-3">
+                        <div class="input-warapper">
+                            <!-- Rótulo do input -->
+                                <label for="event-date">Data</label>
+                                <!-- Cria o campo de entrada -->
+                                <input type="date" id="event-date">
+                        </div>
+    
+                        
+                        <div class="input-warapper">
+                            <!-- Rótulo do input -->
+                            <label for="event-begin">Das</label>
+                                <!-- Cria o campo de entrada -->
+                                <input type="time" id="event-begin">
+                        </div>
+
+                        <div class="input-warapper">
+                            <!-- Rótulo do input -->
+                            <label for="event-end">Até</label>
+                                <!-- Cria o campo de entrada -->
+                                <input type="time" id="event-end">
+                        </div>
+                    </div>
+
+                 
+                </div>
+            </fieldset>
         </form>
 
     </div>
