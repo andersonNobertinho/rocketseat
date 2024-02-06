@@ -17,8 +17,9 @@
             <h1>Crie e Compartilhe seu Evento</h1>
             <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
         </header>
-        <!-- Dentro do fom estarão os inputs -->
-        <form action="">
+        <!-- Dentro do form estarão os inputs -->
+        <!-- Quando você coloca o botão do formulário fora do form você deve coocar um id e no botão irá colocar a propriedade form com o nome dado ao id -->
+        <form id="my-form">
             <!-- Quando aplicamos o display flex no fieldset e o legend estando em seguida no html ele não considera que o legend faz parte da ideia do flex como filhos. 
             A solução é fazer uma div com uma classe logo depois do fieldset colocando todos os elementos dentro   -->
             <!-- Agrupamento de campos -->
@@ -31,7 +32,7 @@
                     <!-- Rótulo do input -->
                         <label for="event-title">Título do evento <span>(mínimo de 8 caracteres)</span></label>
                         <!-- Cria o campo de entrada -->
-                        <input type="text" id="event-title">
+                        <input type="text" id="event-title" required minlength="8"/>
                     </div>
 
                     <div class="input-warapper">
@@ -90,8 +91,16 @@
                         <!-- Rótulo do input -->
                         <label for="event-password">Título do evento <span>(mínimo de 8 caracteres)</span></label>
                             <!-- Cria o campo de entrada -->
-                            <input type="password" id="event-password">
+                            <input type="password" id="event-password" required minlength="8">
                     </div>
+
+                    <div class="checkbox-warapper">
+                        <!-- Cria o campo de entrada -->
+                        <input type="checkbox" id="event-private">
+                        <!-- Rótulo do checkbox -->
+                        <label for="event-private">Evento privado </label>
+                    </div>
+
                 </div>
             </fieldset>
 
@@ -128,7 +137,14 @@
                  
                 </div>
             </fieldset>
+            <!-- Botão dentro do form sempre tentará submeter 
+            <button>Salvar evento</button>
+            <button type="button">Cancelar</button> -->
         </form>
+        
+        <footer>
+           <input class="button" type="submit" form="my-form" value="Salvar evento">
+        </footer>
 
     </div>
    

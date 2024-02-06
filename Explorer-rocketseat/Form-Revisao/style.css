@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-body, input, button, select, textarea {
+body, input, select, textarea {
     font-family: 'Poppins';
 }
 
@@ -90,7 +90,7 @@ form {
     /* Cor de fundo */
     background:#FAFAFC;
     /* deixa a borda arredondada dos 4 lados */
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     /* coloca uma altura minima */
     min-height: 300px;
 /* Agrupando campos com f.... tempo de 4:42 - 8 video */
@@ -141,7 +141,7 @@ fieldset legend {
     flex-direction: column;
 }
 
-.input-warapper label {
+.input-warapper label, .checkbox-warapper label {
     /* Tamanho da fonte */
     font-size: 14px;
     /* Espaçamento entre linhas */
@@ -206,13 +206,102 @@ fieldset legend {
     background-position: right 24px top 50%;
 }
 
+/* Cria colunas com 3 inputs */
 .col-3 {
+    /* Coloca o elemento como display flex que por padrão deixa um do lado do outro */
     display: flex;
+    /* Cria um espaçamento de 20px nos elementos filhos */
     gap: 20px;
 }
 /* A seta > significa primeiro nível de div, o (nth-child) preciso falar qual número do filho eu quero*/
 .col-3 > div:nth-child(1) {
     width: 100%;
 }
+/* O checkbox fica relativo ao input que está com posição absoluta */
+.checkbox-warapper {
+    position: relative;
+}
 
-/* Aplicando estilos aos agora: Aplicando estilos aos agr */
+/* Estilização do labla do checkbox */
+.checkbox-warapper label {
+    /* Ativa as propriedade flex no elemento */
+    display: flex;
+    /* Centraliza o elemento */
+    align-items: center;
+    /* espaçamento entre os elementos flex */
+    gap: 16px;
+    /* margem 0 */
+    margin: 0;
+}
+
+/* Para fazer a estilização do checkbox a primeira coisa que deve ser feita é fazer ele sumir da página */
+.checkbox-warapper input {
+    /* display: none; */
+    position: absolute;
+    /* Ele sobe para o topo do checkbox relativo */
+    top: 0;
+       /* Ele fica a esquerda do checkbox relativo */
+    left: 0;
+    /* Cria uma largura para o checkbox */
+    width: 24px;
+    /* Cria uma altura para o checkbox */
+    height: 24px;
+    /* Deixa o elemento do checkbox inveisivel */
+    opacity:0;
+}
+/* 2 passo para a estilização do checkbox é Através do CSS adicionar adicionar um elemento que será o layout do checkbox */
+.checkbox-warapper label::before {
+    /* para criar um elemento a propriedade content é obrigadotória */
+    content: '';
+    /* largura da caixa*/
+    width: 24px;
+    /* altura da caixa */
+    height: 24px;
+    /* Cria uma borda no checkbox */
+    border: 1px solid #E6E6F0;
+    /* Arredonda a borda */
+    border-radius: 8px;
+}
+
+/* Quando clica no checkbox ele aplica uma imagem  no checkbox*/
+.checkbox-warapper input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_3051_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7.00003L19.59 5.59003L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3051_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+/* Quando ser clicado com o backspace e ele pegar focu será visivel a borda focada do elemento */
+.checkbox-warapper input:focus + label::before {
+    outline: 2px solid black;
+}
+
+footer {
+    background: #F0F0F4;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-top: 1px solid #D6D6D6;
+    border-radius: 0 0 8px 8px; 
+
+}
+
+footer .button {
+    height: 56px;
+    background: #04d361;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-family: 'Archivo';
+}
+
+footer .button:hover {
+    background: #08a04c;
+}
+
+/* Validações */
+
+input:invalid {
+    border: 1px solid #FF1010;
+}
+
