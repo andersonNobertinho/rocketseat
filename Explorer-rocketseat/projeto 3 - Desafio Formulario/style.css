@@ -52,6 +52,10 @@ form {
     background: #FFF;
     margin: 58px auto 0;
     padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px
 }
 
 fieldset {
@@ -65,47 +69,73 @@ fieldset {
     flex-direction: column;
     /* Coloca um espaçamento entre os elementos */
     gap: 36px;
+    margin-top: 10px;
+  
 }
 
-fieldset legend {
+fieldset legend, fieldset h2 {
     font-family: 'Staatliches', sans-serif;
     color: #535971;
     font-size: 24px;
     width: 100%;
     border-bottom: 1px solid #E6E6F0;
     padding-bottom: 16px;
-    
 }
 
-.col-2{
+fieldset h2 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.col{
     display: flex;
     gap: 22px;
+}
+
+.col > div:nth-child(1) {
+    width: 100%;
     
 }
 
-.input-warapper {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 56px;
-
-}
 
 .input-warapper label{
     color: #4E4958;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    
+}
+
+.input-warapper label span {
+    color: #C1BCCC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+
 }
 
 .input-warapper input {
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
     border: 1px solid #E6E6F0;
     background: #FAFAFC;
     padding: 0 24px;
     font-size: 25px;
     line-height: 26px;
+    height: 56px;
+    width: 100%;
+    margin-top: 8px;
 }
+
+.teste input {
+    width: 100%;
+}
+
 
 
 
