@@ -1,166 +1,141 @@
 body * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Staatliches', sans-serif; */
-    background: #EFEFEF;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Staatliches', sans-serif; */
+  background: #efefef;
 }
 
 body::before {
-    content: '';
-    width: 100%;
-    height: 436px;
-    background: #535971;
-    position: absolute;
-    top: 0; 
-    left: 0;
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 436px;
+  background: #535971;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #page {
-    width: 750px;
-    height: 100%;
-    margin: auto;
+  width: 1440px;
+  height: 1930px;
+  margin: auto;
 }
 
 h1 {
-    margin-top: 140px;
-    font-family: 'Staatliches', sans-serif;
-    font-size: 48px;
-    color: #FFF;
+  margin-top: 140px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 48px;
+  color: #fff;
 }
 
 p {
-    margin-top: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    width: 417px;
-    height: 46px;
-    color: #FFF;
+  margin-top: 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  width: 417px;
+  height: 46px;
+  color: #fff;
 }
 
 form {
-    width: 750px;
-    height: 100%;
-    /* height: 1084px; */
-    border-radius: 20px 20px 0px 0px;
-    background: #FFF;
-    margin: 58px auto 0;
-    padding: 64px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px
+  width: 750px;
+  height: 1084px;
+  /* height: 1084px; */
+  border-radius: 20px 20px 0px 0px;
+  background: #fff;
+  margin: 58px auto 0;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 fieldset {
-    border: none;
-    
+  border: none;
 }
 
 .fieldset-warapper {
-    display: flex;
-    /* Quando o flex é habilitado os elementos ficam um do lado do outro, esse comando faz com que ele fique um em baixo do outro! */
-    flex-direction: column;
-    /* Coloca um espaçamento entre os elementos */
-    gap:16px;
-   
-  
+  display: flex;
+  /* Quando o flex é habilitado os elementos ficam um do lado do outro, esse comando faz com que ele fique um em baixo do outro! */
+  flex-direction: column;
+  /* Coloca um espaçamento entre os elementos */
+  gap: 16px;
 }
 
-fieldset legend, fieldset h2 {
-    font-family: 'Staatliches', sans-serif;
-    color: #535971;
-    font-size: 24px;
-    width: 100%;
-    border-bottom: 1px solid #E6E6F0;
-    padding-bottom: 16px;
-    margin-bottom: 32px
+fieldset legend,
+fieldset h2 {
+  font-family: "Staatliches", sans-serif;
+  color: #535971;
+  font-size: 24px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 fieldset h2 {
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    border: none;
-    padding-bottom: 0;
-    margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+  padding-bottom: 0;
+  margin: 0;
 }
 
-.col{
-    display: flex;
-    gap: 32px;
+.col {
+  display: flex;
+  gap: 32px;
 }
 
 .col > div:nth-child(1) {
-    width: 100%;
-    
+  width: 100%;
 }
 
-
-.input-warapper label{
-    color: #4E4958;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    
+.input-warapper label {
+  color: #4e4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .input-warapper label span {
-    color: #C1BCCC;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    line-height: 20px;
-
+  color: #c1bccc;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .input-warapper input {
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    border: 1px solid #E6E6F0;
-    background: #FAFAFC;
-    padding: 0 24px;
-    font-size: 25px;
-    line-height: 26px;
-    height: 56px;
-    width: 300px;
-    margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  padding: 0 24px;
+  font-size: 25px;
+  line-height: 26px;
+  height: 56px;
+  width: 300px;
+  margin-top: 8px;
 }
 
-.teste input {
-    width: 100%;
+.warapper-width input {
+  width: 100%;
 }
 
-.testando{
-    display: flex;
-    gap: 10px;
+.warapper-line {
+  display: flex;
+  gap: 10px;
 }
 
-.testando input {
-    width: 140px;
-    font-size: 100px;
-
-}
-
-/* .testando input::placeholder{
-    color: red;
-    opacity: 0;
-
-} */
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-    display: none;
-}
-
-input[type="time"]::-webkit-inner-spin-button,
-input[type="time"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-    display: none;
+.warapper-line input {
+  width: 140px;
+  font-size: 100px;
+  font-size: 25px;
 }
