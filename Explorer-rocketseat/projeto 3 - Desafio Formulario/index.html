@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="./style.css" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <div id="page">
@@ -21,7 +19,7 @@
         <h1>Mentoria</h1>
         <p>Preencha o formulário abaixo para agendar sua mentoria</p>
       </header>
-      <form action="">
+      <form id="my-form">
         <fieldset>
           <div class="fieldset-warapper">
             <legend>Informações Pessoais</legend>
@@ -57,7 +55,7 @@
           <div class="fieldset-warapper">
             <legend>Informações do Mentor</legend>
 
-            <div class="input-warapper width">
+            <div class="input-warapper warapper-width">
               <label for="name-mentor"
                 >Nome do seu mentor <span>(Só o primeiro nome)</span></label
               >
@@ -112,6 +110,9 @@
           </div>
         </fieldset>
       </form>
+      <footer>
+        <button form="my-form">Salvar</button>
+      </footer>
     </div>
   </body>
 </html>

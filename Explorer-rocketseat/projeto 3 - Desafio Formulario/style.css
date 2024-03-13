@@ -8,6 +8,7 @@ body {
   /* font-family: 'Poppins', sans-serif; */
   /* font-family: 'Staatliches', sans-serif; */
   background: #efefef;
+
 }
 
 body::before {
@@ -22,9 +23,9 @@ body::before {
 }
 
 #page {
-  width: 1440px;
+  width: 752px;
   height: 1930px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 h1 {
@@ -46,7 +47,6 @@ p {
 form {
   width: 750px;
   height: 1084px;
-  /* height: 1084px; */
   border-radius: 20px 20px 0px 0px;
   background: #fff;
   margin: 58px auto 0;
@@ -62,9 +62,7 @@ fieldset {
 
 .fieldset-warapper {
   display: flex;
-  /* Quando o flex é habilitado os elementos ficam um do lado do outro, esse comando faz com que ele fique um em baixo do outro! */
   flex-direction: column;
-  /* Coloca um espaçamento entre os elementos */
   gap: 16px;
 }
 
@@ -139,3 +137,26 @@ fieldset h2 {
   font-size: 100px;
   font-size: 25px;
 }
+
+footer{
+  display: flex;
+  width: 750px;
+  height: 160px;
+  background: #535971;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer button {
+  width: 608px;
+  height: 55px;
+  padding: 15px 40px;
+  border-radius: 20px;
+  border: none;
+  background: #FF5374;
+  color: #FFFFFF;
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  }
