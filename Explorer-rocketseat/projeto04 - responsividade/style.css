@@ -1,0 +1,187 @@
+
+/* Regras de responsividade:
+
+Quando vamos fazer a responsividade utilizamos a regra mobile-first, ou seja, fazer primeiramente o código do mobile */
+
+/* Na responsividade não podemos deixar as medidas fixas e sim utilizar as medidas relativas para não ter problema na acessibilidade, porém
+quando as medias são muito pequenas é melhor deixar em px, pois não irá fazer tanta diferença*/
+
+/* 
+REM = Root EM 
+1rem = 16px (ele será igual o que está setado no navegador)
+Quando quiser pegar 40px de tamanho tenho que dividir 40/16 (nesse caso) que daria 2.5rem
+Para tirar essa dúvida podemos pegar o inpetor de elementos, clicar no elemento desejado h1, por exemplo e ir em Computed que ele mostra o tamnho da fonte em px.
+*/
+
+/* Aqui faz o reset das configurações do navegador */
+* {
+    /* Define margem */
+    margin: 0;
+    /* Define o padding */
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Estiliza a lista */
+ul{
+    /* Tira os pontos da lista */
+    list-style: none;
+}
+/* A uidade de medida REM irá referenciar ao font-size do root element  */
+:root {
+    /* 100% de 16 é igual a 16 se colocar 62.5 ele irá valer 10px pois nesse caso está setado 16px na configuração do navegador */
+    font-size: 62.5%; /* 10px*/
+}
+
+
+/* Estiliza o corpo da página */
+body{
+    /* Coloca uma cor de fundo no corpo da página */
+    background: #ECE9FD;
+    /* Coloca um padding no corpo da página como no root element está definido para o cálculo ficar igual a 10 px então se for um padding de 60px ele ficará 6.0 em rem */
+    padding: 6.0rem 2.3rem 6.6rem;
+    /* Tamanho da fonte na página como é 16 px em rem colocar 1.6*/
+    font-size: 1.6rem;
+
+}
+
+main{
+    /* Largura máxima do main */
+    max-width: 33.0rem;
+    /* Coloca uma margem 0 em cima e em baixo e centraliza o main no meio da página */
+    margin: 0 auto
+}
+
+/* Estilizando o título h1 */
+h1{
+    /* Tipo da fonte */
+    font-family: "Epilogue", sans-serif;
+    /* Tamanho da fonte do título */
+    font-size: 4.0rem;
+    /* Peso da fonte */
+    font-weight: 800;
+    line-height: 4.8rem;
+}
+
+/* Estiliza o primeiro p filho dentro do main */
+main p:first-child{
+    /* Define uma cor para a fonte */
+    color: #7158EF;
+    /* Espaçamento entre as letras */
+    letter-spacing: 3px;
+    /* Tranforma o texto em letras maiúscula */
+    text-transform: uppercase;
+    /* Espaçamento entre as linhas */
+    line-height: 3.2rem;
+    /* Margem de baixo */
+    margin-bottom: 1.7rem;
+}
+
+/* Pega o p que anterior a ele tem o H1 */
+h1 + p {
+    /* Define a cor */
+    color: rgba(10, 0, 57, 0.64);
+
+    /* Espaçamento entre linhas */
+    line-height: 3.2rem;
+    /* Define a margem de baixo */
+    margin-bottom: 3.2rem;
+}
+
+/* Estilizando o link */
+a {
+    /* Define a cor do texto */
+    color: #090039;
+    /* Tira o sublinhado do link */
+    text-decoration: none;
+}
+
+/* Estilização quando passar o mouse em cima do link */
+a:hover{
+    /* Define uma cor para o texto */
+    color: #7158EF;
+    /* Peso da fonte em negrito */
+    font-weight: bold;
+}
+
+/* Estiliza a lista */
+ul {
+    /* Coloca uma margem no topo da lista */
+    margin-top: 7.2rem
+}
+
+/* Estiliza os itens da lista */
+ul li {
+    /* Peso da fonte */
+    font-weight: 700;
+    /* Tamanho da fonte */
+    font-size: 2.4rem;
+
+    line-height: 3.2rem;
+    /* Cor da fonte */
+    color: #090039;
+    /* Largura da caixa dos itens */
+    width: 25.7rem;
+    /* Define o comportameto da caixa dos itens como flex  */
+    display: flex;
+    /* Centraliza os itens  */
+    align-items: center;
+    /* Espaçamento entre os itens  */
+    gap: 3.8rem;
+}
+
+/* Estiliza o span que está dentro do itens da lista */
+ul li span {
+    /* Peso da fonte */
+    font-weight: 800;
+    /* Tamanho da fonte */
+    font-size: 7.2rem;
+    /* Espaçamento entre linhas */
+    line-height: 8.0rem;
+
+    letter-spacing: -2px;
+    /* Cor da fonte */
+    color: #090039;
+}
+
+/* media queries -- são os brackpoints da largura do dispositivo */
+/* Quando for menos ele irá aplicar as configurações do mobile 
+O que essa instrução diz é que quando chegar em 700px pra cima irá a plicar
+as configurações abaixo */
+@media (min-width: 700px) {
+    
+    body {
+        /* Define um padding no topo da página */
+        padding-top: 8rem;
+    }
+
+    /* Estilizando o main */
+    main {
+        /* Largura maxima */
+        max-width: 1020px;
+        /* Comportamento da caixa */
+        display: flex;
+        /* Espaçamento entre os elementos quando é flex */
+        gap: 10rem
+    }
+    /* Estilizando primeiro nível de div dentro do main */
+    main > div {
+        max-width: 484px;
+    }
+
+    ul li {
+        /* Espaçamento entre os elementos */
+        gap: 5.3rem;
+        /* Tamanho da caixa máximo de 450px */
+        max-width: 450px;
+        /* Alinhamento no centro */
+        align-items: center;
+    }
+
+    /* Pega todo o li que anterior a ele é um li */
+    ul li + li {
+        /* Margem do topo */
+        margin-top: 3.2rem;
+    }
+}
