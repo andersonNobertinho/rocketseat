@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* funciona nos navegadores que possui motor webkit */
+    -webkit-font-smoothing: antialiased;
+    /* funciona no firefox */
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Deixa como padrão a fonte Source Code Pro */
+:root{
+    /* Estilo da fonte */
+    font-family: "Source Serif Pro", sans-serif;
+    /* Tamanho da fonte */
+    font-size: 62.5%;
+   
+}
+
+/* Estilo do corpo da página */
+body{
+    /* Cor da fonte */
+    color: #A54328;
+    /* Tamanho da fonte */
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 32rem;
+    /* Ele sugere as linhas laterais esquerd e direita */
+    margin-inline: auto;
+    padding: 5.6rem 4rem;
+    box-sizing: content-box;
+
+}
+
+img{
+    width: 100%;
+}
+
+/* Estilização do botão */
+button{
+    /* Estilo da fonte */
+    font-family: "Source Serif 4", serif;
+    /* Peso da fonte */
+    font-weight: 500;
+    /* Cor de fundo do botão */
+    background-color: #A54328;
+    /* Cor da fonte */
+    color: white;
+    /* Espeçura da borda */
+    border: 0;
+    /* Arredondamento da borda */
+    border-radius: 0.6rem;
+    /* Espaçamento da borda da parte de dentro */
+    padding: .8rem 1.2rem;
+    /* Espaçamento da margem, ou seja, da parte de fora */
+    margin-top: 1.8rem;
+}
+
+/* Estilização do h1 e h2 */
+h1, h2 {
+    /* Tamanho da fonte */
+    font-size: 2.8rem;
+    /* Espaçamento entre linhas */
+     line-height: 3.6rem; 
+
+}
+
+
+/* Estilização da tag p, li e strong */
+p, li, strong {
+    /* Tamanho da fonte = 14px */
+    font-size: 1.4rem;
+    /* Espaçamento entre linhas */
+    line-height: 1.8rem;
+}
