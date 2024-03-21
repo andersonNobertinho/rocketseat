@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* Serve para somar a largura máxima de todos os preenchimentos */
     box-sizing: border-box;
 
     /* funciona nos navegadores que possui motor webkit */
@@ -29,13 +30,24 @@ main {
     max-width: 32rem;
     /* Ele sugere as linhas laterais esquerd e direita */
     margin-inline: auto;
+    /* Espaçamento de padding */
     padding: 5.6rem 4rem;
+    /* Com o border-box ele serve para somar a largura máxima em todos os preenchimentos, então ele considera o espaçamento do padding que são 4rem e o conteúdo e englobar para formar os 32 rem da largura, ou seja, 320px -80px sobra 240px para o conteúdo.
+    Já o content-box faz com que o conteúdo seja a largura total, ou seja, width 320px */
     box-sizing: content-box;
+    /* Muda o comportamento da caixa para flex */
+    display: flex;
+    /* Coloca as caixas que estão dentro do main uma em baixo da outra */
+    flex-direction: column;
+    gap: 3.2rem;
 
 }
 
 img{
+    /* Deixa o tamanho da imagem original */
     width: 100%;
+    /* Coloca espaços em cima e em baixo */
+    margin-block: 3.2rem;
 }
 
 /* Estilização do botão */
@@ -55,7 +67,7 @@ button{
     /* Espaçamento da borda da parte de dentro */
     padding: .8rem 1.2rem;
     /* Espaçamento da margem, ou seja, da parte de fora */
-    margin-top: 1.8rem;
+    margin-top: 3.2rem;
 }
 
 /* Estilização do h1 e h2 */
@@ -64,7 +76,10 @@ h1, h2 {
     font-size: 2.8rem;
     /* Espaçamento entre linhas */
      line-height: 3.6rem; 
+}
 
+h2 {
+    margin-bottom: 3.2rem;
 }
 
 
@@ -74,4 +89,51 @@ p, li, strong {
     font-size: 1.4rem;
     /* Espaçamento entre linhas */
     line-height: 1.8rem;
+}
+
+ul, ol{
+    padding-left: 2.4rem;
+}
+
+ul {
+    margin-bottom: 2.4rem;
+}
+/* Ponto de quebra para fazer a estilização do desktop */
+@media(min-width:1120px) {
+   main{
+    
+    /* Essa largura fit-content significa que será encaixado do tamanho do conteúdo */
+    max-width: fit-content;
+    /* max-width: 100%; */
+    flex-direction: row ;
+    gap: 18.9rem;
+
+    padding: 9rem 6rem;
+   } 
+   /* Estilização para as div filhas do main */
+   main > div {
+    /* Coloca uma relação entre as duas divs como se fosse 50% para cada div. Ou seja, o flex 1 divide por igual */
+    flex: 1;
+    /* Largura maxima das divs */
+    max-width: 50rem;
+    gap: 16rem
+   }
+
+   h1, h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+
+   }
+
+   p, li, strong {
+    font-size: 2rem;
+    line-height: 2.5rem;
+   }
+
+   button{
+    padding: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+   }
+
 }
