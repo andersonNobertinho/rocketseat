@@ -1,6 +1,9 @@
 bordy {
+    /* Margem fica com 0 pixels */
     margin: 0px;
+    /* Tipo de fonte */
     font-family: 'Open Sans', sans-serif;
+    /* Cor do background */
     background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
     min-height: 100vh;
 }
@@ -8,100 +11,157 @@ bordy {
 .page {
     /* border: 1px solid red; */
     width: 1000px;
+    /* Margem com 65 pixels em cima auto dos lados para centralizar a classe page e 0 em baixo */
     margin: 65px auto 0;
 }
 
 nav {
+    /* Deixa o comportamento da caixa como flex */
     display: flex;
     justify-content: space-between;
+    /* Margem de baixo com 55px */
     margin-bottom: 55px;
     
     
 }
 
 ul {
+    /* Estilo da lista fica como none sumindo os pontos */
     list-style: none;
+    /* Deixa o comportamento da ciaxa como flex */
     display: flex;
+    /* Da um espaçamento de 48px para os elementos dentro da caixa que tem comportamento flex */
     gap: 48px;
+    /* Alinha os elementos ao centro */
     align-items: center;
+    /* Coloca uma margem 0 nessa lista*/
     margin: 0;
+    /* Coloca um padding 0  na lista*/
     padding: 0;
+    /* Tipo da fonte da lista */
     font-family: 'Mulish', sans-serif;
 }
-
+/* Estiliza os elementos que da lista que possuem links */
 ul li a {
+    /* Cor do link */
     color: #1F1534;
+    /* Tira o sublinhado do link */
     text-decoration: none;
+    /* Coloca uma opacidade de 0.5 */
     opacity: 0.5;
 }
-
+/* Coloca um efeito ao passar o mouse no links que estão na lista */
 ul li a:hover {
+    /* Deixa a fonte em negrito */
     font-weight: bold;
+    /* Coloca uma opacidade de 1 */
     opacity: 1;
 }
 
 main {
+    /* Deixa o comportamento da caixa como flex */
     display: flex;
+    /* Centraliza os itens no centro da tela */
     align-items: center;
     justify-content: space-between ;
 
 }
 
 h1 {
+    /* Coloca o estilo da fonte Mulish no h1 */
     font-family: 'Mulish', sans-serif;
+    /* Tamanho da fonte  */
     font-size: 49px;
+    /* Espaçamento das linhas */
     line-height: 56px; 
+    /* Cor da fonte */
     color: #000;
+    /* Especifica o peso da fonte  */
     font-weight: normal;
+    /* Largura da caixa de texto */
     width: 490px;
 
 }
 
+/* Estiliza o span dentro do h1 */
 h1 span {
+    /* Define uma cor para o texto */
     color: #89C5CC;
+    /* Especifica o peso da fonte */
     font-weight: bold;
 }
 
+
 section p {
+    /* Defome o tamanho da fonte */
     font-size: 14px;
+    /* Coloca um espaçamento entre as linhas */
     line-height: 28px;
+    /* Coloca uma cor para a fonte */
     color:#7D7987;
+    /* Margem em cima e em baixo de 40px e 0 dos lados */
     margin: 40px 0;
 }
 
+/* Estiliza o botão */
 button{
+    /* Coloca um comportamento flex na caixa */
    display: flex;
+   /* Define o estilo de fonte */
    font-family: 'DM Sans', sans-serif;
+   /* Tranforma as letras em maiúsculas */
    text-transform: uppercase;
+   /* Define uma cor de funto para o botão */
    background: #69B99D;
+   /* Define uma cor do texto */
    color: #F9F9F9;
+   /* Tira a borda do botão */
    border: none;
+   /* Arredonda a borda */
    border-radius: 4px;
+   /* Coloca um padding de 14px em cima 32 dos lados e 15 em baixo */
    padding: 14px 32px 15px;
+   /* Alinha o elemento horizontalmente para o centro(eixo x) */
    justify-content: center; 
+   /* Alinha os elemento na vertival(eixo y) */
    align-items: center;
+   /* Coloca um espaçamento entre aos (eixo x)  */
    gap: 10px;
+   /* Define o cursor do mouse como um ponteiro */
    cursor: pointer;
 }
-
+/* Coloca um estilo quando passa o mouse em cima do botão */
 button:hover {
+    /* Coloca uma cor de fundo no botão */
     background: #4b8b76;
 }
 
+/* Estilização do roda pé */
 footer {
+    /* Tamanho da fonte */
     font-size: 14px;
+    /* Espaçamento entre linhas  */
     line-height: 28px;
+    /* Margem automatica */
     margin: auto;
+    /* Centraliza o texto */
     text-align: center;
+    /* Coloca uma margem em cima */
     margin-top: 80px;
 }
 
+/* Estiliza os links do rodapé */
 footer a {
+    /* Peso da fonte */
     font-weight: bold;
 }
 
+/* Estiliza a classe balls */
 #balls{
+    /* Coloca um posicionamento fixo */
     position: fixed;
+    /* Coloca um posicionamento 0 na parte de baixo fazendo com que o elemento encoste na borda de baixo do navegador */
     bottom: 0;
+    /* Coloca um posicionamento  0 na parte direita fazendo com que o elemento encoste na borda direita do navegador */
     right: 0;
 }

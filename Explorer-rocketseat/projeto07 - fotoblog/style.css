@@ -1,41 +1,60 @@
+/* Utilizado para resetar as configurações do navegador */
 *{
+    /* Margem fica zero */
     margin: 0;
+    /* Padding fica zero */
     padding: 0;
+    /* Serve para somar a largura máxima de todos os preenchimentos */
     box-sizing: border-box;
    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
+    /* Coloca um tamanho padrão para a fonte */
     font-size: 62.5%;
 
-    /* --color-base-white: #ffffff;
+    --color-base-white: #ffffff;
     --color-base-gray-100: #f5f5f5; 
-    --color-base-gray-900: #202024; */
+    --color-base-gray-300: #8d8d99;
+    --color-base-gray-900: #202024;
 }
 
 body {
+    /* Especifica o tamanho da fonte */
     font-size: 1.6rem;
-    /* background-color: var(--color-base-white); */
+    background-color: var(--color-base-white);
+    color: var(--color-base-gray-900);
 }
 
-#app > * {
+/* Estiliza todos elementos que estão dentro de app */
+/* #app > * {
+    /* Define uma borda para os elementos 
     border: 1px solid red;
-}
+} */
 
+/* Estiliza o id app */
 #app {
+    /* Coloca o comportamento de grid na caixa */
     display: grid;
+    /* Define o tamanho das linhas do grid*/
     grid-template-rows: max-content 1fr max-content;
+    /* Coloca uma altura no elemento */
     height: 100vh;
 }
 
+/* Estiliza a classe container */
 .container{
+    /* Coloca um padding com valores de 1.6 em cima e em baixo e 3.2 nas laterais */
     padding: 1.6rem 3.2rem;
+    /* Coloca um largura minima */
     width: min(112rem, 100%);
+    /* Especifica uma margem 0 em cima e em baixo e automatico nas laterais */
     margin: 0 auto;
 }
 
 main {
-    background-color: lightblue;
+    /* ? */
     overflow-y: scroll;
+    background-color: var(--color-base-gray-100);
 }
