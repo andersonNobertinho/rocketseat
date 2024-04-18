@@ -2,11 +2,14 @@
     /* Calcúlo do tamanho da caixa sem o border box ele conta o a largura da caixa + o padding adicionado. Padrão é content-box */
     /*  */
     box-sizing: border-box;
+    /* Margem zerada */
     margin: 0;
+    /* Padding zerado */
     padding: 0;
 }
 
 body, input, select, textarea {
+    /* Especifica o tipo de fonte */
     font-family: 'Poppins';
 }
 
@@ -65,9 +68,11 @@ header h1{
     font-family: 'Archivo', sans-serif;
     /* Especifica a grossura da fonte */
     font-weight: bold;
-    /*  */
+    /* Tamanho da fonte */
     font-size: 36px;
+    /* Espaçamento entre linhas */
     line-height: 42px;
+    /* Cor da fonte */
     color: white;
     /* Coloca uma margem inferior  */
     margin-bottom: 24px;
@@ -93,12 +98,13 @@ form {
     border-radius: 8px 8px 0 0;
     /* coloca uma altura minima */
     min-height: 300px;
-/* Agrupando campos com f.... tempo de 4:42 - 8 video */
-/* Preenchimento interno no form */
+    /* Preenchimento interno no form */
     padding: 64px;
-
+    /* Coloca um comportamento de flexbox na caixa do formulário */
     display: flex;
+    /* Coloca um comportamento de coluna no flexbox */
     flex-direction: column;
+    /* Espaçamento entre elementos */
     gap: 48px;
 }
 
@@ -176,6 +182,7 @@ fieldset legend {
     border-radius: 8px;
     /* o height e o padding funciona para criar o tamanho do input */
     height: 56px;
+    /* Espaçamento de padding 0 em cima e em baixo e 24px nas laterais */
     padding: 0 24px;
     /* Tipo de fonte */
     font-family: 'Poppins';
@@ -215,10 +222,12 @@ fieldset legend {
 }
 /* A seta > significa primeiro nível de div, o (nth-child) preciso falar qual número do filho eu quero*/
 .col-3 > div:nth-child(1) {
+    /* Especifica uma largura */
     width: 100%;
 }
 /* O checkbox fica relativo ao input que está com posição absoluta */
 .checkbox-warapper {
+    /* Altera a posição do elemento tendo como referência a posição inicial dele */
     position: relative;
 }
 
@@ -246,7 +255,7 @@ fieldset legend {
     width: 24px;
     /* Cria uma altura para o checkbox */
     height: 24px;
-    /* Deixa o elemento do checkbox inveisivel */
+    /* Deixa o elemento do checkbox invisivel */
     opacity:0;
 }
 /* 2 passo para a estilização do checkbox é Através do CSS adicionar adicionar um elemento que será o layout do checkbox */
@@ -269,39 +278,58 @@ fieldset legend {
 }
 /* Quando ser clicado com o backspace e ele pegar focu será visivel a borda focada do elemento */
 .checkbox-warapper input:focus + label::before {
+    /* Remove o comportamento padrão do browser de adicionar uma borda a um elemento quando está  selecionado */
     outline: 2px solid black;
 }
 
 footer {
+    /* Coloca uma cor de fundo  */
     background: #F0F0F4;
+    /* Estabelece uma altura */
     height: 136px;
+    /* Coloca o comportamento de flexbox na caixa footer */
     display: flex;
+    /* Coloca o comportamento de coluna no flexbox */
     flex-direction: column;
+    /* Coloca um padding que um espaço por dentro do elemento de 40px em cima e em baixo e 64px nas laterais */ 
     padding: 40px 64px;
+    /* Coloca uma margem na parte de baixo */
     margin-bottom: 100px;
+    /* Coloca uma borda na parte superior */
     border-top: 1px solid #D6D6D6;
+    /* Arredonda as bordas  */
     border-radius: 0 0 8px 8px; 
 
 }
 
 footer .button {
+    /* Especifica uma altura */
     height: 56px;
+    /* Coloca uma cor de fundo */
     background: #04d361;
+    /* Arredondamento das bordas */
     border-radius: 8px;
+    /* Retira a borda */
     border: none;
+    /* Tamanho da fonte */
     font-size: 16px;
+    /* Espaçamento entre as linhas */
     line-height: 26px;
+    /* Cor do texto */
     color: #FFFFFF;
+    /* Estilo da fonte */
     font-family: 'Archivo';
 }
 
 footer .button:hover {
+    /* Muda a cor de fundo quando passa o mouse em cima */
     background: #08a04c;
 }
 
 /* Validações */
 
 input:invalid {
+    /* Coloca uma borda vermelha quando não é validado o campo do imput */
     border: 1px solid #FF1010;
 }
 

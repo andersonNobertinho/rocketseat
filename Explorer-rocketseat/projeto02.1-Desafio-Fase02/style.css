@@ -1,18 +1,29 @@
 body {
+  /* Especifica margem */
     margin: 0;
+    /* Especifica o tipo de fonte */
     font-family: "Open Sans", sans-serif;
+    /* Coloca uma cor de fundo */
     background: linear-gradient(90deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+    /* Coloca uma altura minima */
     min-height: 100vh;
   }
   
+  /* Estiliza a classe page */
   .page {
+    /* Especifica uma largura */
     width: 1000px;
+    /* Especifica uma margem 0 em baixo e em cima e auto para as laterais */
     margin: 0 auto;
+    /* Coloca um padding em cima */
     padding-top: 65px;
   }
   
+  /* Estilização da tag nav */
   nav {
+    /* Coloca um comportamento flex na caixa do nav */
     display: flex;
+    /*  */
     justify-content: start;
     align-items: center;
     justify-content: space-between;

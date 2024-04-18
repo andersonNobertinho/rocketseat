@@ -125,7 +125,7 @@ button{
    justify-content: center; 
    /* Alinha os elemento na vertival(eixo y) */
    align-items: center;
-   /* Coloca um espaçamento entre aos (eixo x)  */
+   /* Coloca um espaçamento entre aos elementos  */
    gap: 10px;
    /* Define o cursor do mouse como um ponteiro */
    cursor: pointer;

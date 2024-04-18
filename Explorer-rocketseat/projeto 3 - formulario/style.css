@@ -1,7 +1,10 @@
 /* Essa estilização para esse seletor faz com que todos os elementos fiquem com as propriedades zeradas - são resetados os valores do navegador. */
 *{
+    /* Margem zero */
     margin: 0;
+    /* Padding zero */
     padding: 0;
+
     box-sizing: border-box;
 }
 
@@ -14,7 +17,7 @@ body, input, button, slect, textarea {
 /* Estilização do corpo da página que é body */
 
 body {
-    /* Tipo da fonte */
+    /* Cor de fundo */
     background: #E5E5E5;
 }
 /* Duvida entre before e after */
@@ -73,7 +76,7 @@ header h1{
     line-height: 42px;
     /* Cor da fonte */
     color: white;
-
+    /* Margem em baixo */
     margin-bottom: 24px;
 
 }
@@ -101,8 +104,11 @@ form {
     min-height: 300px;
     /* Espaçamento interno do form */
     padding: 64px;
+    /* Coloca uma comportamento de flexbox na caixa do form  */
     display: flex;
+    /* Coloca o compotamento do flexbox como coluna */
     flex-direction: column;
+    /* Espaçamento entre elementos */
     gap: 48px;
 }
 
@@ -158,6 +164,7 @@ fieldset legend {
     line-height: 24px;
     /* Cor do texto da label */
     color: #4E4958;
+    /* Margem de baixo do elemento */
     margin-bottom: 8px;
 }
 /* Estilizar o elemento  span que está na classe input-warapper que possui uma label e dentro da label tem um span */
@@ -185,10 +192,15 @@ fieldset legend {
     border: 1PX solid #E6E6F0;
     /* Arredonda a borda */
     border-radius: 8px;
+    /* Especifica Altura do elemento  */
     height: 56px;
+    /* Espaçamento de dentro do elemento de 0 em cima e em baixo e 24px nas laterais */
     padding: 0 24px;
+    /* Tamanho de fonte */
     font-size: 16px;
+    /* Espaçamento entre linhas*/
     line-height: 26px;
+    /* Cor de fonte */
     color: #6c6a71;
 
     /* Funciona para o cálculo do tamanho da caixa. Sem o border-box ele irá somar o valor do width e  */
@@ -217,33 +229,44 @@ fieldset legend {
 
 /* Duvida */
 .col-3 {
+    /* Comportamento da caixa de flexbox */
     display: flex;
+    /* Espaçamento entre elementos */
     gap: 20px;
 }
 
 /* Duvida */
 /* A seta quer dizer para pegar a div apenas do primeiro nivel */
 .col-3 > div:nth-child(1) {
+    /* Largura de 100% */
     width: 100%;
 }
 
 /* Estiliza  */
 .checkbox-warapper {
+    /* Posição relativa altera a posição do lemento tendo como referência a posição inicial dele */
     position: relative;
 }
 
 /* Estiliza o label que está ao lado do checkbox */
 .checkbox-warapper label {
+    /* Comportamento de flexbox da caixa */
     display: flex;
+    /* Centraliza os elementos no eixo y  */
     align-items: center;
+    /* Margem zerada */
     margin: 0;
+    /* Espaçamento entre os elemento do flexbox */
     gap: 16px;
 }
 
 /* Estiliza o input do checkbox */
 .checkbox-warapper input {
+    /* Coloca o lemento em absolute que leva como referencia o navegador. */
     position: absolute;
+    /* Gruda o elemento na parte de cima do navegador */
     top:0;
+    /* C */
     left: 0;
     width: 24px;
     height: 24px;
