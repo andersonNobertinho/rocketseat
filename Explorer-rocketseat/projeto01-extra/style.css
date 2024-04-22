@@ -1,81 +1,115 @@
+/* Reseta as configuraç~eos dos navegadores */
 *{
+    /* Espaçamento de padding 0 */
     padding: 0;
+    /* Espaçamento da margin 0*/
     margin: 0;
 }
 
 body{
     /* coloca o estilo da fonte como Open Sans, caso não tenha no navegado entra o sans-serif */
-
     font-family: 'Open Sans', sans-serif; 
+    /* Alinhamento do texto no centro */
     text-align: center; 
       
 }
 
 #conteudo{
+    /* Margem automática */
     margin: auto;
+    /* Largura */
     width: 626px; 
 }
 
 main{
+    /* Espaçamento do padding 64 em cima e em baixo e 0 nas laterais */
     padding: 64px 0;
 }
 
 main img{
+    /* Margem inferior */
     margin-bottom: 32px;
 }
 
 h1{
+    /* Tamanho da fonte */
     font-size: 32px;
+    /* Peso da fonte */
     font-weight: 500;
+    /* Estilo da fonte */
     font-family: 'Dosis', sans-serif; 
+    /* Margem inferior */
     margin-bottom: 16px;
 }
 
 h1 span{
+    /* Cor da fonte */
     color: #EE24FF;
+    /* Peso da fonte */
     font-weight: 700;
 }
 
 span{
+    /* Peso da fonte  */
     font-weight: bold;
+    /* Cor da fonte */
     color: #000000;
 }
 
 p{
+    /* Margem automática */
     margin: auto;
+    /* Largura */
     width: 540px;
+    /* Cor  */
     color: #828282;
+    /* Tamanho fonte  */
     font-size: 15px;
 }
 
 .texto{
+    /* Margem superior */
     margin-top: 32px;
 }
 
 footer{
+    /* Largura */
     width: 100%;
 }
 
 footer img{
+    /* Comportamento block da caixa */
     display: block;
+    /* Largura */
     width: 100%;
+    /* Margem superior */
     margin-top: 72px;
     
 }
 
 #linha{
+    /* Coloca uma margem 0 em cima, automático nas laterais e 16px em baixo */
     margin: 0 auto 16px;
+    /* Largura */
     width: 391px;
+    /* Borda */
     border: 1px solid #ECEFF2;
 }
 
 a{
+    /* Tamanho da fonte */
     font-size: 15px;
+    /* Cor do texto */
     color: #3F3D56;
+    /* Peso da fonte */
     font-weight: bold;
+    /* Tira o sublinhado do link */
     text-decoration: none;
 }
 
+/* Pegue o elemento a que anterior a ele tem um outro seletor a e coloque uma margem esquerda de 57px */
+
 a + a {
+    /* Margem a esquerda */
     margin-left: 57px;
 }

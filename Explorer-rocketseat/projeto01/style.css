@@ -36,6 +36,7 @@ h1{
     line-height: 56px; /* 114.286% */
     /* Peso da fonte como normal  */
     font-weight: normal ;
+    /* Margem na parte de baixo */
     margin-bottom: 32px ;
 }
 
@@ -65,19 +66,27 @@ p, #footer{
 /* Pega o seletor que anterior a ele tenha um a */
 /* Pegue o elemento a que anterior a ele tem um outro seletor a e coloque uma margem esquerda de 28px */
 #footer a + a {
+    /* Margem esquerda */
     margin-left: 28px; ;
 }
 
 #line {
+    /* Largura */
     width: 568px;
+    /* Altura */
     height: 0px;
+    /* especifica um borda */
     border: 1px solid #ECEFF2;
+    /* Margem 0 em cima automático dos lados e 8 em baixo */
     margin: 0 auto 8px;
 
 }
 
 #balls {
+    /* Dertermina uma posição fixa para o elemento */
     position:fixed;
+    /* Gruda o elemento na parte de baixo do navegador */
     bottom: 0px;
+    /* Gruda o elemmento na parte direita do navegador */
     right: 0px;
 }

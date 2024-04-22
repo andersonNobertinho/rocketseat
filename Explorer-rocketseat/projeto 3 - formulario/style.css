@@ -300,33 +300,47 @@ fieldset legend {
 
 /* Dúvida */
 .checkbox-warapper input:focus + label::before {
-    
+    /* Especifica um estilo de contorno quando p checkbox estiver em focus */
     outline: 2px solid black;
 }
 
 /* Estilização do rodapé */
 footer {
+    /* Cor de fundo */
     background: #F0F0F4;
+    /* Altura */
     height: 136px;
+    /* Comportamento flex na caixa footer  */
     display: flex;
+    /* Comportamendo dos elementos da caixa flex fica como coluna */
     flex-direction: column;
+    /* Espaçamento do lado de dentro da caixa */
     padding: 40px 64px;
+    /* Espaçamento na parte de baixo e por fora da caixa */
     margin-bottom: 100px;
+    /* Coloca uma borda superior  */
     border-top: 1px solid #d6d6d6;
+    /* Arredonda a parte de baixo */
     border-radius: 0 0 8px 8px;
 }
 
 /* Estilização do botão */
 footer .button {
+    /* Altura */
     height: 56px;
+    /* Cor de fundo */
     background: #04d361;
+    /* Arredondamento das bordas */
     border-radius: 5px;
+    /* Tira a borda */
     border: 0;
+    /* Cor da fonte */
     color: #FFFFFF;
 }
 
 /* Ao colocar o mouse em cima irá mudar a cor de fundo do botão */
 footer .button:hover {
+    /* Altera a cord o fundo quando o mouse passa por cima */
     background: #08a04c;
 }
 
@@ -334,6 +348,7 @@ footer .button:hover {
 
 /* Quando o input está inválido irá aparecer uma borda vermelha */
 input:invalid {
+    /* Especifica uma borda */
     border: 1px solid #FF1010;
 }
 
