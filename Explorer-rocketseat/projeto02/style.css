@@ -5,6 +5,7 @@ bordy {
     font-family: 'Open Sans', sans-serif;
     /* Cor do background */
     background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    /* Coloca uma altura miníma */
     min-height: 100vh;
 }
 

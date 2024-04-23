@@ -24,103 +24,151 @@ body {
     /* Coloca um comportamento flex na caixa do nav */
     display: flex;
     /*  */
-    justify-content: start;
+    /* justify-content: start; */
     align-items: center;
     justify-content: space-between;
+    /* Coloca uma margem na parte inferior */
     margin-bottom: 15px;
   }
   
   ul {
+    /* Especifica um comportamento flex para caixa */
     display: flex;
+    /* Tira o estilo padrão da lista */
     list-style: none;
+    /* Margem fica 0 */
     margin: 0;
+    /* Padding fica com espaçamento 0 */
     padding: 0;
+    /* Espaçamento entre elementos */
     gap: 48px;
   }
   
   a {
+    /* Cor da fonte */
     color: #1f1534;
+    /* Tira o sublinhado do link */
     text-decoration: none;
   }
   
   ul li a {
+      /* Coloca uma opacidade */
       opacity: 0.5;
   }
   
   ul li a:hover {
+    /* Peso da fonte */
     font-weight: bold;
+    /* Coloca uma opacidade */
     opacity: 1;
   }
   
-  h1,
-  ul {
+  h1,ul {
+    /* Estilo da fonte */
     font-family: "Mulish", sans-serif;
   }
 
   main {
+    /* Muda o comportamento da caixa para flex */
     display: flex;
+    /*  */
     align-items: center;
     
   }
   
   h1 {
+    /* Tamanho da fonte */
     font-size: 49px;
+    /*  */
     line-height: 56px;
+    /* Cor da fonte */
     color: #1f1534;
+    /* Estilo da fonte */
     font-family: "Mulish", sans-serif;
+    /* Peso da fonte */
     font-weight: 400;
+    /* Largura */
     width: 490px;
   }
   
   h1 span {
+    /* Cor da fonte */
     color: #89c5cc;
+    /* Peso da fonte */
     font-weight: bold;
   }
   
   section p {
+    /* Tamanho da fonte */
     font-size: 14px;
+    /*  */
     line-height: 28px;
+    /* Cor da fonte */
     color: #7d7987;
+    /* Estilo da fonte */
     font-family: "Open Sans", sans-serif;
+    /* Margem de 40 em cima e em baixo e 0 nas laterais */
     margin: 40px 0;
+    /* Largura */
     width: 439px;
   }
   
   button {
+    /* Comportamento da caixa */
     display: flex;
+    /* Cor da fonte */
     color: white;
+    /* Estilo da fonte */
     font-family: "Open Sans", sans-serif;
+    /*  */
     align-items: center;
+    /* Cor de fundo */
     background: #69B99D;
+    /* Borda fica com 0 ou seja sem borda */
     border: 0;
+    /* Espaçamento do padding */
     padding: 14px 32px 15px;
+    /*  */
     text-align: center;
+    /* Comportamento flex para caixa */
     display: flex;
+    /*  */
     justify-content: center;
+    /* Espaçamento entre elemento flex */
     gap: 10px;
+    /* Coloca todas as caixas em maiúscula */
     text-transform: uppercase;
+    /* Arredondamento das bordas */
     border-radius: 4px;
+    /* Muda o ponteiro do mouse */
     cursor: pointer;
   }
   
   button:hover {
+    /* Cor de fundo */
       background: #4EA788;
   }
   
   footer {
+    /* Tamanho da fonte */
     font-size: 14px;
     line-height: 28px;
     text-align: center;
+    /* Coloca uma borda na parte superior  */
     margin-top: 80px;
   }
   
   footer a {
+    /* Peso da fonte */
     font-weight: bold;
   }
   
   #balls {
+    /* Comportamento da caixa em posição fixa */
     position: fixed;
+    /* Posição inferior */
       bottom: 0;
+      /* Direita */
       right: 0;
   }
   
