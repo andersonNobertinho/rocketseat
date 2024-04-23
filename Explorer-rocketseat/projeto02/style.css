@@ -19,15 +19,14 @@ bordy {
 nav {
     /* Deixa o comportamento da caixa como flex */
     display: flex;
+    /* distribui os elementos igualmente ao longo do eixo principal, com espaçamento entre eles */
     justify-content: space-between;
     /* Margem de baixo com 55px */
-    margin-bottom: 55px;
-    
-    
+    margin-bottom: 55px;    
 }
 
 ul {
-    /* Estilo da lista fica como none sumindo os pontos */
+    /* Estilo da lista fica como none sumindo os marcadores */
     list-style: none;
     /* Deixa o comportamento da ciaxa como flex */
     display: flex;
@@ -64,6 +63,7 @@ main {
     display: flex;
     /* Centraliza os itens no centro da tela */
     align-items: center;
+    /* distribui os elementos igualmente ao longo do eixo principal, com espaçamento entre eles */
     justify-content: space-between ;
 
 }
