@@ -23,9 +23,10 @@ body {
   nav {
     /* Coloca um comportamento flex na caixa do nav */
     display: flex;
-    /*  */
+  
     /* justify-content: start; */
     align-items: center;
+    /* Alinha o elemento horizontalmente para distribuição do espaço igual para cada elemento (eixo x) */
     justify-content: space-between;
     /* Coloca uma margem na parte inferior */
     margin-bottom: 15px;
@@ -71,7 +72,7 @@ body {
   main {
     /* Muda o comportamento da caixa para flex */
     display: flex;
-    /*  */
+    /* Alinha os elementos na vertival(eixo y) */
     align-items: center;
     
   }
@@ -79,7 +80,7 @@ body {
   h1 {
     /* Tamanho da fonte */
     font-size: 49px;
-    /*  */
+     /* Espaçamento entre linhas  */
     line-height: 56px;
     /* Cor da fonte */
     color: #1f1534;
@@ -101,7 +102,7 @@ body {
   section p {
     /* Tamanho da fonte */
     font-size: 14px;
-    /*  */
+     /* Espaçamento entre linhas  */
     line-height: 28px;
     /* Cor da fonte */
     color: #7d7987;
@@ -120,7 +121,7 @@ body {
     color: white;
     /* Estilo da fonte */
     font-family: "Open Sans", sans-serif;
-    /*  */
+    /* Alinha os elementos na vertival(eixo y) */
     align-items: center;
     /* Cor de fundo */
     background: #69B99D;
@@ -128,11 +129,11 @@ body {
     border: 0;
     /* Espaçamento do padding */
     padding: 14px 32px 15px;
-    /*  */
+    /* Alinha o texto no centro  */
     text-align: center;
     /* Comportamento flex para caixa */
     display: flex;
-    /*  */
+    /* Alinha o elemento horizontalmente para o centro(eixo x) */
     justify-content: center;
     /* Espaçamento entre elemento flex */
     gap: 10px;
@@ -152,7 +153,9 @@ body {
   footer {
     /* Tamanho da fonte */
     font-size: 14px;
+    /* Espaçamento entre linhas  */
     line-height: 28px;
+    /* Alinha o texto no centro  */
     text-align: center;
     /* Coloca uma borda na parte superior  */
     margin-top: 80px;

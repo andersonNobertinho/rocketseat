@@ -27,6 +27,7 @@ body{
 }
 
 main {
+    /* Especifica uma largura maxima */
     max-width: 32rem;
     /* Ele sugere as linhas laterais esquerd e direita */
     margin-inline: auto;
@@ -39,6 +40,7 @@ main {
     display: flex;
     /* Coloca as caixas que estão dentro do main uma em baixo da outra */
     flex-direction: column;
+    /* Espaçamento entre elementos */
     gap: 3.2rem;
 
 }
@@ -79,6 +81,7 @@ h1, h2 {
 }
 
 h2 {
+    /* Margem inferior */
     margin-bottom: 3.2rem;
 }
 
@@ -92,10 +95,12 @@ p, li, strong {
 }
 
 ul, ol{
+    /* Espaçamento de padding na esquerda */
     padding-left: 2.4rem;
 }
 
 ul {
+    /* Margem inferior */
     margin-bottom: 2.4rem;
 }
 /* Ponto de quebra para fazer a estilização do desktop */
@@ -105,9 +110,11 @@ ul {
     /* Essa largura fit-content significa que será encaixado do tamanho do conteúdo */
     max-width: fit-content;
     /* max-width: 100%; */
+    /* Comportamento dos elementos do flex em linha */
     flex-direction: row ;
+    /* Espaçamento entre elementos */
     gap: 18.9rem;
-
+    /* Espaçamento entre padding */
     padding: 9rem 6rem;
    } 
    /* Estilização para as div filhas do main */
@@ -116,23 +123,31 @@ ul {
     flex: 1;
     /* Largura maxima das divs */
     max-width: 50rem;
+    /* Espaçamento entre elementos flex */
     gap: 16rem
    }
 
    h1, h2 {
+    /* Tamanho da fonte */
     font-size: 4rem;
+    /* Espaçamento entre linhas */
     line-height: 5rem;
 
    }
 
    p, li, strong {
+    /* Tamanho da fonte */
     font-size: 2rem;
+    /* Espaçamento entre linhas */
     line-height: 2.5rem;
    }
 
    button{
+    /* Espçamento de padding */
     padding: 1rem;
+    /* Tamanho da fonte */
     font-size: 1.4rem;
+    /* Espaçamento entre linhas */
     line-height: 2.4rem;
    }
 

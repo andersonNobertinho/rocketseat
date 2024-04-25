@@ -1,120 +1,163 @@
 body {
+  /* Especifica a margem  */
   margin: 0;
-
+  /* Especifica um estilo para a fonte */
   font-family: "Open Sans", sans-serif;
-
+  /* Cor de fundo */
   background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
-
+  /* Coloca uma altura mínima */
   min-height: 100vh;
 }
 
 .page {
+  /* Largura */
   width: 1000px;
+  /* Margem com 0 em cima e em baixo e auto nas laterias */
   margin: 0 auto;
+  /* Espaçamento na parte superior  */
   padding-top: 65px;
 }
 
 nav {
+  /* Comportamento flex na caixa */
   display: flex;
+  /* Distribui os espaçamentos do elemento flex por igual */
   justify-content: space-between;
+   /* Alinha os elementos na vertival(eixo y) */
   align-items: center;
-
+  /* Margem inferior */
   margin-bottom: 55px;
 }
 
 ul {
   display: flex;
+  /* Coloca um espaçamento entre os elementos da caixa flex */
   gap: 48px;
+  /* Tira o estilo da lista, fazendo com que saiam os marcadores */
   list-style: none;
+  /* Margem 0 */
   margin: 0;
+  /* Espaçamento de padding 0 */
   padding: 0;
 }
 
 a {
+  /* Cor do texto */
   color: #1f1534;
+  /* Tira o estilo do link, como o sublinhado */
   text-decoration: none;
 }
 
 ul li a {
+    /* Coloca uma opacidade */
     opacity: 0.5;
 }
 
 ul li a:hover {
+  /* Peso da fonte */
   font-weight: bold;
+  /* Coloca uma opacidade quando passa o mouse */
   opacity: 1;
 }
 
-ul,
-h1 {
+ul, h1 {
+  /* Estilo da fonte */
   font-family: "Mulish", sans-serif;
 }
 
 main {
+  /* Comportamento da caixa */
   display: flex;
+  /* Alinha os elementos na vertival(eixo y) */
   align-items: center;
+  /* Alinha o elemento horizontalmente para espaços igualmente alinhados(eixo x) */
   justify-content: space-between;
 }
 
 h1 {
+  /* Tamnho da fonte */
   font-size: 49px;
+  /* Espaçamento das linhas */
   line-height: 56px;
+  /* Cor do texto */
   color: #1f1534;
-
+  /* Peso da fonte */
   font-weight: normal;
-
+  /* Largura */
   width: 490px;
 }
 
 h1 span {
+  /* Cor do texto */
   color: #89c5cc;
+  /* Peso da fonte */
   font-weight: bold;
 }
 
 p {
+  /* Tamanho do texto */
   font-size: 14px;
+  /* Espaçamento entre linhas */
   line-height: 28px;
+  /* Cor do texto */
   color: #7d7987;
-
+  /* Margem de 40 em cima e em baixo e 0 nas laterais */
   margin: 40px 0;
 }
 
 button {
+  /* Cor do texto */
   color: white;
+  /* Tranforma as letras em maiúsculas */
   text-transform: uppercase;
+  /* Estilo da fonte */
   font-family: "Open Sans", sans-serif;
-
+  /* Cor do fundo */
   background: #69B99D;
+  /* Tira a borda */
   border: 0;
+  /* Coloca espaçamento de padding */
   padding: 14px 32px 15px;
-
+  /* Comportamento da caixa como flex */
   display: flex;
+    /* Alinha os elementos na vertival(eixo y) */
   align-items: center;
+  /* Alinha o elemento horizontalmente para o centro(eixo x) */
   justify-content: center;
+  /* Coloca espaçamento entre elementos flex */
   gap: 10px;
-
+  /* Borda arredonda */
   border-radius: 4px;
+  /* Muda o ponteiro do mouse */
   cursor: pointer;
 }
 
 button:hover {
+  /* Cor de fundo */
   background: #4b8b76;
 }
 
 footer {
+  /* Tamanho da Fonte  */
   font-size: 14px;
+  /* Espaçamento entre linhas */
   line-height: 28px;
-
+  /* Alinha o texto ao centro */
   text-align: center;
-
+  /* Coloca uma margem superior */
   margin-top: 80px;
 }
 
 footer a {
+  /* Peso da fonte */
   font-weight: bold;
 }
 
 #balls {
+  /* Posição fixa do elemento */
     position: fixed;
+    /* Faz com que o elemento fique colado na parte inferior */
     bottom: 0;
+    /* Faz com que o elemento fique cololado na parte direita */
     right: 0;
 }

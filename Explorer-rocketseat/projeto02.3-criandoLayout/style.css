@@ -1,103 +1,155 @@
+/* Reseta as configurações padrão do navegador */
 * {
+    /* Especifica margem */
     margin: 0;
+    /* Especifica padding */
     padding: 0;
+    /*  */
     box-sizing: border-box;
 }
 body {
+    /* Cor de fundo */
     background: #2C2B3D;
+    /* Estilo de fonte */
     font-family: 'JetBrains Mono', monospace;
+    /* Cor da fonte */
     color: #FFF;
 }
 
 #rodapeimg {
+    /* Coloca o posicionamento relativo */
     position: relative;
+    /* Especifica a margem */
     margin: 0px 0 20px 20px;
 }
 
 .page {
+    /* Largura */
     width: 1280px;
+    /* Margem automatica */
     margin: auto;
+    /* Especifica o padding */
     padding: 71px;
 }
 
 nav {
+    /* Coloca um comportamento flex na caixa */
     display: flex;
+    /* Distribui os espaçamentos do elemento flex por igual */
     justify-content:space-between ;
+     /* Alinha os elementos na vertival(eixo y) */
     align-items: center;
+    /* Especifica uma margem inferior */
     margin-bottom: 100px;
+    /* Tamanho da fonte */
     font-size: 14px;
     
 }
 
 nav ul {
+    /* Especifica um comportamento flex para caixa */
     display: flex;
+    /* Espaçamento entre os elementos da caixa flex */
     gap: 64px;
+    /* Tira o estilo da lista, retirando os marcadores */
     list-style-type: none;
+     /* Alinha os elementos na vertival(eixo y) */
     align-items: center;
 }
 
 a {
+    /* Cor da fonte */
     color: #fff;
+    /* Retira o estilo do link, como o sublinhado */
     text-decoration: none;
-    
 }   
 
 
 
 main {
+    /* Coloca um comportamento flex para caixa */
     display: flex;
+      /* Alinha os elementos na vertival(eixo y) */
     align-items: flex-start;
+    /* Distribui os espaçamentos do elemento flex por igual */
     justify-content: space-between;
+    /* Especifica uma margem */
     margin: 0 0 167px;
 }
 
 h1 {
+    /* Alinha o texto ao meio */
     text-align: center;
+    /* Tamanho da fonte */
     font-size: 36px;
+    /* Peso da fonte */
     font-weight: 700;
+    /* Margem inferior */
     margin-bottom: 59px;
 }
 
 span {
+    /* Cor do texto */
     color: #00BFA6;
+    /* Peso da fonte */
     font-weight: 700;
 }
 
 p {
+    /* Cor */
     color:#C2C2C2;
+    /* Estilo da fonte */
     font-family: 'Open Sans', sans-serif;
+    /* Alinha o texto ao centro */
     text-align: center;
+    /* Tamanho da fonte */
     font-size: 16px;
+    /* Largura */
     width: 590px;
+    /* Espaçamento entre linhas */
     line-height: 28px; 
 }
 
 footer {
+    /* Coloca um comportamento flex para caixa */
     display: flex;
+    /* Alinha os elementos na vertival(eixo y) */
     align-items: center;
+    /* Especifica a margem automática */
     margin: auto;
 }
 
 footer img {
+    /* Especifica uma margem */
     margin: 20px;
 }
 
 footer div {
+    /* Largura */
     width: 568px;
+    /* Especifica margem automática */
     margin: auto;
+    /* Alinha o texto ao centro */
     text-align: center;
 }
 
 footer hr {
+    /* Cor da borda */
     border-color: #00BFA6;
+    /* Margem automática */
     margin: auto;
 }
 
 footer p {
+    /* Margem superior */
     margin-top: 27px;
+    /* Centraliza o texto ao centro */
     text-align: center;
+    /* Cor da fonte */
     color: #FFF;
+    /* Tamanho da fonte */
     font-size: 14px;
+    /* Peso da fonte */
     font-weight: 500;
 }
 

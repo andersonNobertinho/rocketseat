@@ -1,162 +1,259 @@
+/* Reseta as configurações */
 body * {
+  /* Margem 0 */
   margin: 0;
+  /* Espaçamento de padding 0 */
   padding: 0;
+  /* Calcúlo do tamanho da caixa sem o border box ele conta o a largura da caixa + o padding adicionado. Padrão é content-box */
   box-sizing: border-box;
 }
 
 body {
   /* font-family: 'Poppins', sans-serif; */
   /* font-family: 'Staatliches', sans-serif; */
+  /* Cor de fundo */
   background: #efefef;
 
 }
 
 body::before {
+  /* Ao utilizar essa pseudoclass obrigatoriamente temos que colocar o conteúdo */
   content: "";
+  /* Largura */
   width: 100%;
+  /* Altura */
   height: 436px;
+  /* Cor de Fundo */
   background: #535971;
+  /* Especifica uma posição relativa */
   position: absolute;
+  /* Gruda o conteudo na parte de cima do navegador */
   top: 0;
+  /* Gruda na parte esquerda do navegador */
   left: 0;
+  /* permite ajustar a ordem de sobreposição dos objetos ao renderizar o conteúdo */
   z-index: -1;
 }
 
 #page {
+  /* Largura */
   width: 752px;
+  /* Altura */
   height: 1930px;
+  /* Margem 0 em cima e em baixo e automático nas laterais */
   margin: 0 auto;
 }
 
 h1 {
+  /* Margem superior */
   margin-top: 140px;
+  /* Estilo de fonte */
   font-family: "Staatliches", sans-serif;
+  /* Tamanho da fonte */
   font-size: 48px;
+  /* Cor do texto */
   color: #fff;
 }
 
 p {
+  /* Margem superior */
   margin-top: 18px;
+  /* Estilo de fonte */
   font-family: "Poppins", sans-serif;
+  /* Tamanho da fonte */
   font-size: 20px;
+  /* Largura */
   width: 417px;
+  /* ALtura */
   height: 46px;
+  /* Cor da fonte */
   color: #fff;
 }
 
 form {
+  /* Largura */
   width: 750px;
+  /* Altura*/
   height: 1084px;
+  /* Arredondamento */
   border-radius: 20px 20px 0px 0px;
+  /* Cor de fundo */
   background: #fff;
+  /* Margem em cima de 58 automático nas laterais e  0 em baixo*/
   margin: 58px auto 0;
+  /* Espçamento de padding */
   padding: 64px;
+  /* Comportamento flex para caixa */
   display: flex;
+  /* Comportamento dos elementos na caixa flex como coluna */
   flex-direction: column;
+  /* Espaçamento dos elementos na caixa flex */
   gap: 30px;
 }
 
 fieldset {
+  /* Retira a borda */
   border: none;
 }
 
 .fieldset-warapper {
+  /* Especícica o comportamento flex para caixa */
   display: flex;
+  /* Comportamento dos elementos na caixa flex como coluna */
   flex-direction: column;
+  /* Espaçamento entre os elementos na caixa flex */
   gap: 16px;
 }
 
 fieldset legend,
 fieldset h2 {
+  /* Estilo da fonte */
   font-family: "Staatliches", sans-serif;
+  /* Cor da fonte */
   color: #535971;
+  /* Tamanho da fonte */
   font-size: 24px;
+  /* Largura */
   width: 100%;
+  /* Coloca borda inferior */
   border-bottom: 1px solid #e6e6f0;
+  /* Espaçamento inferior */
   padding-bottom: 16px;
+  /* Coloca uma margem inferior */
   margin-bottom: 16px;
 }
 
 fieldset h2 {
+  /* Tamanho da fonte */
   font-size: 20px;
+  /* Peso da fonte */
   font-weight: 400;
+  /* Estilo normal */
   font-style: normal;
+  /* Retirar borda */
   border: none;
+  /* Espaçamento inferior  */
   padding-bottom: 0;
+  /* Margem */
   margin: 0;
 }
 
 .col {
+  /* Comportamento da caixa flex */
   display: flex;
+  /* Espaçamento de elemento */
   gap: 32px;
 }
 
+/* A seta quer dizer para pegar a div apenas do primeiro nivel */
 .col > div:nth-child(1) {
+  /* Largura */
   width: 100%;
 }
 
 .input-warapper label {
+  /* Cor de texto */
   color: #4e4958;
+  /* Estilo de fonte */
   font-family: "Poppins", sans-serif;
+  /* Tamanho Fonte  */
   font-size: 14px;
+  /* Define a altura da caixa que um conteúdo de texto pertence */
   line-height: 24px;
 }
 
 .input-warapper label span {
+  /* Cor do texto */
   color: #c1bccc;
+  /* Estilo de fonte */
   font-family: "Poppins", sans-serif;
+  /* Tamanho de fonte */
   font-size: 12px;
+  /* Define a altura da caixa que um conteúdo de texto pertence */
   line-height: 20px;
 }
 
-.input-warapper input {
+.input-warapper input { 
+  /* Comportamento flex para caixa */
   display: flex;
+  /* Comportamento dos elementos flex como coluna */
   flex-direction: column;
+  /* Arredondamento das bordas */
   border-radius: 8px;
+  /* Cria uma borda */
   border: 1px solid #e6e6f0;
+  /* Cor do fundo */
   background: #fafafc;
+  /* Padding de 0 em cima e em baixo e 24 nas laterais */
   padding: 0 24px;
+  /* Tamanho da fonte */
   font-size: 25px;
+  /* Espaçamento entre linhas */
   line-height: 26px;
+  /* Altura */
   height: 56px;
+  /* Largura */
   width: 300px;
+  /* Margem superior */
   margin-top: 8px;
 }
 
 .warapper-width input {
+  /* Largura */
   width: 100%;
 }
 
 .warapper-line {
+  /* Comportanmento flex da caixa */
   display: flex;
+  /* Espaçamento dos elementos */
   gap: 10px;
 }
 
 .warapper-line input {
+  /* Largura */
   width: 140px;
-  font-size: 100px;
+  /* Tamanho da fonte */
+  /* font-size: 100px; */
   font-size: 25px;
 }
 
 footer{
+  /* Comportamento da caixa como flex */
   display: flex;
+  /* Largura */
   width: 750px;
+  /* Altura */
   height: 160px;
+  /* Cor de fundo */
   background: #535971;
+  /* Margem automática */
   margin: auto;
+  /* Arredondamento das bordas */
   border-radius: 0 0 20px 20px;
+    /* Alinha o elemento horizontalmente para o centro(eixo x) */
   justify-content: center;
+  /* Alinha os elementos na vertival(eixo y) */
   align-items: center;
 }
 
 footer button {
+  /* Largura */
   width: 608px;
+  /* Altura */
   height: 55px;
+  /* Espaçamento de padding 15 em cima e em baixo e 40 nas laterais */
   padding: 15px 40px;
+  /* Bordas arredondadas */
   border-radius: 20px;
+  /* Retira a borda */
   border: none;
+  /* Cor de fundo */
   background: #FF5374;
+  /* Cor da fonte */
   color: #FFFFFF;
+  /* Estilo da fonte */
   font-family: "Staatliches", sans-serif;
+  /* tamanho da fonte */
   font-size: 20px;
   }

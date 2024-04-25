@@ -124,7 +124,7 @@ button{
    padding: 14px 32px 15px;
    /* Alinha o elemento horizontalmente para o centro(eixo x) */
    justify-content: center; 
-   /* Alinha os elemento na vertival(eixo y) */
+   /* Alinha os elementos na vertival(eixo y) */
    align-items: center;
    /* Coloca um espaçamento entre aos elementos  */
    gap: 10px;

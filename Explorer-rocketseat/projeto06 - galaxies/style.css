@@ -1,43 +1,63 @@
+/* Reseta as configurações do navegador */
 *{
+    /* Margem */
     margin: 0;
+    /* Espaçamento por dentro da caixa */
     padding: 0;
+    /*  */
     box-sizing: border-box;
 }
 
 :root{
-
+    /* Estilo de fonte */
     font-family: "Mulish", sans-serif;
 
 }
 
 body{
+    /* Cor de fundo */
     background: #121214;
+    /* Espaçamento padding, ou seja por dentro da caixa */
     padding: 72px 104px;
+    /* Comportamento da grade como um grid */
     display: grid;
+    /*  */
     justify-content: center;
 }
 
 header h1{
+    /* Peso da fonte */
     font-weight: 900;
+    /* Tamanho da fonte */
     font-size: 56px;
+    /* Espaçamento entre linhas */
     line-height: 73px;
+    /* Cor da fonte */
     color: #02799d;
 }
 
 
 header p{
+    /* Peso da fonte */
     font-weight: 600;
+    /* Tamanho da fonte */
     font-size: 32px;
+    /* Espaçamento entre linhas */
     line-height: 40px;
+    /* Cor da fonte */
     color: #E1E1E6;
 }
 
 
 main {
+    /* Margem superior */
     margin-top: 62px;
+    /* Comportamento da caixa como grid */
     display: grid;
+    /* Especifica o número e de tamanho das colunas */
     grid-template-columns: repeat(3, 370px);
     /* place-content: center; */
+    /* Espaçamento dos elementos */
     gap: 48px 60px;
     
 }
@@ -45,25 +65,37 @@ main {
 
 
 .card {
+    /* Cor de fundo */
    background: #202024;
+   /* Borda */
    border: 2px solid #323238;
+   /* Arredondamento das  bordas*/
    border-radius: 8px;
+   /* Quando quer ocultar o elemento  */
    overflow: hidden;
 
 }
 
 .card h2 {
+    /* Cor da fonte */
     color: #E1E1E6;
+    /* Peso da fonte */
     font-weight: 900;
+    /* Tamanho da fonte */
     font-size: 36px;
+    /* Espaçamento de padding 24 em cima 32 nas lateris e 0 em baixo */
     padding: 24px 32px 0px;
 
 }
 
 .card p {
+    /* Cor da fonte */
     color: #C4C4CC;
+     /* Tamanho da fonte */
     font-size: 18px;
+    /* Peso da fonte */
     font-weight: 600;
+       /* Espaçamento de padding 24 em cima 32 nas laterais e 0 em baixo */
     padding: 24px 32px 32px;
 }
 
