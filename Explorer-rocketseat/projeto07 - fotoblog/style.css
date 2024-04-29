@@ -70,9 +70,13 @@ main {
 }
 
 header, nav, nav ul{
+    /* Comportamento da caixa como flexbox */
     display: flex;
+    /* Alinha os elementos na vertival(eixo y) */
     align-items: center;
+    /* Coloca um espaçamento entre os elementos do flexbox */
     gap: 7.2rem;
+    /* Peso na fonte */
     font-weight: 700;
 }
 
@@ -82,69 +86,100 @@ header form {
 }
 
 nav ul {
+    /* Tira o estilo da lista */
     list-style: none;
+    /* Tamanho da fonte */
     font-size: 1.8rem;
+    /* Cor do texto */
     color: var(--color-base-gray-300);
 }
 
 ul li.active{
+    /* Cor do texto */
     color: var(--color-base-gray-900);
 }
 
 .input-wrapper label {
+    /* Largura */
     width: 1px;
+    /* Altura */
     height: 1px;
+    /* Oculta o elemento da tela */
     overflow: hidden;
+    /* Posicionamento absoluto */
     position: absolute;
 
 }
 
 .input-wrapper input {
+    /* Largura */
     width: 100%;
+    /* Espaçamento interior da caixa */
     padding: 1.6rem;
+    /* Cor de fundo */
     background-color: var(--color-base-gray-100);
+    /* Retira a borda */
     border: 0;
+    /* Arredondamento da borda */
     border-radius: .6rem;
+    /* Tamanho da fonte */
     font-size: 1.6rem;
+    /* Peso da fonte */
     font-weight: 600;
 }
 
 .input-wrapper input::placeholder {
     opacity: 0.56;
+    /* Cor da fonte */
     color: var(--color-base-gray-500);
 }
 
 .avatar{
+    /* Largura */
     width: 4.2rem;
+    /* Altura */
     height: 4.2rem;
+    /* O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do elemento */
     object-fit:cover;
+    /* Arredondamento da borda */
     border-radius: 50%;
 }
 
 /* Galeria */
 main h1 {
+    /* Espaçamento superior  */
     padding-top: 1.6rem;
+    /* Tamanho da fonte */
     font-size: 2.4rem;
 }
 
 .gallery {
+    /* Epecifica uma margem superior */
     margin-top: 3.2rem;
-
+    /* Comportamento da caxia como grid */
     display: grid;
+    /* Faz o grid ter 3 colunas cada uma com 1 fração */
     grid-template-columns: repeat(3, 1fr);
+    /* Espaçamento entre os elementos */
     gap: 2.2rem;
 }
 
 .item img{
+    /* Largura */
     width: 100%; 
+    /* Proporção da imagem */
     aspect-ratio: 16/9;
+    /* O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do elemento */
     object-fit: cover;
 }
 
 
 
 footer p{
+    /* Centraliza o texto no meio */
     text-align: center;
+    /* Espaçamento da caixa */
     padding: 1.6rem;
+    /* Peso da fonte */
     font-weight: 600;
 }
