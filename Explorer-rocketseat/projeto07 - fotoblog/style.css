@@ -13,12 +13,18 @@
 :root {
     /* Coloca um tamanho padrão para a fonte */
     font-size: 62.5%;
-    font-family: "Mulish", sans-serif;
     /* Variáveis de cores */
     --color-base-white: #ffffff;
     --color-base-gray-100: #f5f5f5; 
     --color-base-gray-300: #8d8d99;
+    --color-base-gray-500: #3d3d3d;
     --color-base-gray-900: #202024;
+}
+
+html, body, input {
+    /* Estilo de fonte */
+    font-family: "Mulish", sans-serif;
+    
 }
 
 body {
@@ -59,11 +65,86 @@ body {
 main {
     /* Coloca um scroll rolante no main */
     overflow-y: scroll;
+    /* Coloca uma cor de fundo */
     background-color: var(--color-base-gray-100);
 }
 
-header img{
-    border: 1px solid #202024;
-    border-radius: 10rem;
-    width: 5.0rem;
+header, nav, nav ul{
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+    font-weight: 700;
+}
+
+
+header form {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 1.8rem;
+    color: var(--color-base-gray-300);
+}
+
+ul li.active{
+    color: var(--color-base-gray-900);
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.6rem;
+    background-color: var(--color-base-gray-100);
+    border: 0;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+    opacity: 0.56;
+    color: var(--color-base-gray-500);
+}
+
+.avatar{
+    width: 4.2rem;
+    height: 4.2rem;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+/* Galeria */
+main h1 {
+    padding-top: 1.6rem;
+    font-size: 2.4rem;
+}
+
+.gallery {
+    margin-top: 3.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+}
+
+.item img{
+    width: 100%; 
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+
+
+footer p{
+    text-align: center;
+    padding: 1.6rem;
+    font-weight: 600;
 }
