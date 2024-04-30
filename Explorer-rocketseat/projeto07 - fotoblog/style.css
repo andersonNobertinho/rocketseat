@@ -69,6 +69,8 @@ main {
     background-color: var(--color-base-gray-100);
 }
 
+
+
 header, nav, nav ul{
     /* Comportamento da caixa como flexbox */
     display: flex;
@@ -164,6 +166,13 @@ main h1 {
     gap: 2.2rem;
 }
 
+.item{
+    background-color: var(--color-base-white);
+    border-radius: .8rem;
+    /* Como a imagem está saindo fora da caixa não é possivel o arredondamento da borda e isso significa que é um overflow, então estamos escondendo o overflow para a imagem ficar dentro da caixa, ou seja tudo que sobrar não irá aparecer*/
+    overflow: hidden;
+}
+
 .item img{
     /* Largura */
     width: 100%; 
@@ -171,8 +180,35 @@ main h1 {
     aspect-ratio: 16/9;
     /* O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do elemento */
     object-fit: cover;
+
+    filter: grayscale(1);
 }
 
+.item img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+}
+
+.details {
+    /* Espaçamento do interior da caixa */
+    padding: 2.2rem;
+}
+
+.details h2{
+    font-size: 1.8rem;
+}
+
+.tags{
+    margin-top: 1.2rem;
+}
+
+.tags span{
+    padding: .6rem;
+    background-color: var(--color-base-gray-100);
+    border: .4rem;
+    line-height: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
 
 
 footer p{
