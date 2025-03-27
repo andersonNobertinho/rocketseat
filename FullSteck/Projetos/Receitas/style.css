@@ -1,0 +1,88 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    /* Estilo de fonte */
+    font-family: "Alice", serif;
+    /* Cor da fonte */
+    color:#573A37;
+
+    /* font-weight: 400;
+    font-style: normal; */
+  
+}
+
+body{
+  /* Coloca uma imagem de fundo */
+  background-image: url(./assets/Página\ de\ receita.png);
+  /* Cobre toda área visivel */
+  background-size: cover;
+}
+
+#page{
+
+  box-sizing: border-box;
+  /* Largura */
+  width: 800px;
+  /* Espaçamento dentro do elemento */
+  padding: 24px;
+  /* Cor do fundo */
+  background-color: #F0E8C2;
+  /* Arredondamento da borda */
+  border-radius: 24px;
+  /* Centraliza o elemento */
+  margin: 48px auto 28px;
+}
+
+
+img{
+  /* Arredondamento da borda */
+  border-radius: 16px;
+}
+
+section + section {
+  margin-top: 24px;
+}
+
+#about p + p {
+  margin-top: 12px;
+}
+
+h1{
+  /* Espaçamento entre linhas */
+  line-height: 140%;
+  /* Tamanho da fonte */
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+
+h2 {
+  /* Tamanho da fonte */
+  font-size: 24px;
+  
+}
+
+h1, h2 {
+  /* Cor da fonte */
+  color: #291B1A;
+  margin-bottom: 4px;
+  /* line-height: 150% */
+}
+
+ul {
+  padding-left: 25px;
+}
+
+
+footer{
+  color:#F0E8C2;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+footer img {
+  vertical-align: middle ;
+}
