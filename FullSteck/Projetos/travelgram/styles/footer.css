@@ -1,0 +1,13 @@
+footer{
+  display: flex;
+  gap: 24px;
+  padding-block: 24px;
+
+}
+
+/* Filho número 1, ou seja, no caso seria o filho do footer span número 1 */
+footer span:nth-child(1) {
+  margin-right: auto;
+  
+
+}
