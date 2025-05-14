@@ -1,7 +1,21 @@
 #featured {
-  img{
+  img {
     height: 100%;
     object-fit: cover;
+  }
+
+  .card {
+    position: relative;
     border-radius: 4px;
+    /* Esconde tudo que passar da caixa */
+    overflow: hidden;
+    /* O & substitui o card por já estar dentro dele */
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
   }
 }
