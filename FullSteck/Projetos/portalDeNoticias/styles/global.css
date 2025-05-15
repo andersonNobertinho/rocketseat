@@ -69,6 +69,7 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-color-primary);
+  /* faz uma sombra ao redor da caixa */
   box-shadow: 0px 4px 16px #02061740 ;
 }
 
