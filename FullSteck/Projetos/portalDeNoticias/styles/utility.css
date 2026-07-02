@@ -1,5 +1,4 @@
-/*Utility-first */
-/* Quando uma classe faz apenas uma coisa */
+/*utility-first */
 .grid {
   display: grid;
 }
@@ -8,12 +7,16 @@
   grid-auto-flow: column;
 }
 
-.grid-cols-2 {
+.grid-cols-2{
   grid-template-columns: 1fr 1fr;
 }
 
 .gap-16 {
   gap: 16px;
+}
+
+.gap-32{
+  gap: 32px;
 }
 
 .text-2xl {
@@ -29,5 +32,5 @@
 }
 
 .text-sm {
-  font: var(--tex-sm);
+  font: var(--text-sm)
 }
